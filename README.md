@@ -4,9 +4,9 @@ Be sure that your system is up-to-date and that you use the latest drivers avail
 
 Note: 
 
-These are stable drivers if you want to use newer beta/devel drivers do it on your own!
+- These are stable drivers if you want to use newer beta/devel drivers do it on your own!
 
-LLVM 7 or newer is requiered to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
+- LLVM 7 or newer is requiered to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
 
 #### AMD
 
