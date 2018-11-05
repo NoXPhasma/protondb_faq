@@ -1,14 +1,14 @@
 ## Why my games crash on start, run very slow or have rendering issues?
 
-- Be sure that your system is up-to-date and that you use the latest drivers available for your graphics card.
+#### Be sure that your system is up-to-date and that you use the latest drivers available for your graphics card.
 
-- Be sure that you have checked on [WineHQ](https://appdb.winehq.org) If your game runs on Wine. If you see that it run, then maybe an 3rd Party DRM like "Denuvo" is making trouble here.
+#### Be sure that you have checked on [WineHQ](https://appdb.winehq.org) If your game runs on Wine. If you see that it run, then maybe an 3rd Party DRM like "Denuvo" is making trouble here.
 
-- Be sure that you run Steam with Steam Runtime libraries: 
+#### Be sure that you run Steam with Steam Runtime libraries: 
 
-Arch: Use Steam (Runtime)
+- Arch: Use Steam (Runtime)
 
-Solus: Disable the native-runtime in their "linux-steam-integration-tool"
+- Solus: Disable the native-runtime in their "linux-steam-integration-tool"
 
 Note: 
 
