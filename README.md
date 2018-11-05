@@ -2,7 +2,7 @@
 
 - Be sure that your system is up-to-date and that you use the latest drivers available for your graphics card.
 
-- Be sure that no 3rd Party DRM like "Denuvo" is making trouble here.
+- Be sure that you have checked on [WineHQ](https://appdb.winehq.org) If your game runs on Wine. If you see that it run, then maybe an 3rd Party DRM like "Denuvo" is making trouble here.
 
 - Be sure that you run Steam with Steam Runtime libraries: 
 
@@ -74,7 +74,6 @@ sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
 sudo apt-get update`
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
-If your game is still not starting or crashing check on [WineHQ](https://appdb.winehq.org) If your game runs on Wine. If you see that it run, then maybe an 3rd Party DRM like "Denuvo" is making trouble here.
 
 ## My game crashes after a while but works fine without esync
 
