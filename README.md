@@ -24,6 +24,10 @@ Note:
 
 - LLVM 7 or newer is requiered to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
 
+
+
+##
+### Installation of graphic card drivers
 #### AMD
 
 Arch/Manjaro/Antergos:
@@ -43,7 +47,7 @@ Ubuntu 18.10
 sudo apt install mesa-utils
 sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
 ```
-
+##
 #### Nvidia
 
 Arch/Manjaro/Antergos:
@@ -64,7 +68,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo apt install nvidia-driver-396
 ```
-
+##
 #### Intel
 
 Arch/Manjaro/Antergos:
@@ -84,7 +88,8 @@ sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
 sudo apt update
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
-To check if vulkan is working execute the command: vulkaninfo
+##
+To check if vulkan is working execute the command: `vulkaninfo`
 
 Here is an example how it should look.
 
@@ -124,7 +129,7 @@ Here is an example
 ```
 WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
-
+##
 #### Use of Tools
 
 The two most popular currently are [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
