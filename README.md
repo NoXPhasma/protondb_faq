@@ -1,16 +1,16 @@
-## Why my games crash on start, run very slow or have rendering issues?
+## Why do my games crash on start, run very slow or have rendering issues?
 
-#### Be sure that your system is up-to-date and that you use the latest drivers available for your graphics card.
+#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card.
 
-#### Be sure that you have checked on [WineHQ](https://appdb.winehq.org) If your game runs on Wine. If you see that it run, then maybe an 3rd Party DRM like "Denuvo" is making trouble here.
+#### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
 
-#### Be sure that you run Steam with Steam Runtime libraries: 
+#### Be sure that you run Steam with Steam Runtime libraries:
 
 - Arch: Use Steam (Runtime)
 
 - Solus: Disable the native-runtime in their "linux-steam-integration-tool"
 
-Note: 
+Note:
 
 - These are stable drivers if you want to use newer beta/devel drivers do it on your own!
 
@@ -18,12 +18,12 @@ Note:
 
 #### AMD
 
-Arch/Manjaro/Antergos: 
+Arch/Manjaro/Antergos:
 ```
 sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loader vulkan-tools
 ```
 
-Ubuntu 18.04: 
+Ubuntu 18.04:
 ```
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
 sudo apt-get update`
@@ -38,7 +38,7 @@ sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
 
 #### Nvidia
 
-Arch/Manjaro/Antergos: 
+Arch/Manjaro/Antergos:
 ```
 sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
 ```
@@ -57,7 +57,7 @@ sudo apt install nvidia-driver-396
 
 #### Intel
 
-Arch/Manjaro/Antergos: 
+Arch/Manjaro/Antergos:
 ```
 sudo pacman -S lib32-vulkan-intel vulkan-intel lib32-mesa lib32-vulkan-icd-loader vulkan-tools
 ```
@@ -91,9 +91,11 @@ This is fixed since DXVK Version 0.90 and Vulkan 1.1.88. Unfortunately at time o
 
 ## Some reports say they made the game running by installing some software, how do I do that?
 
-There are two ways to install additional software
+There are two ways to install additional software into the games prefix:
 
 #### Use of Winetricks
+Make sure you have winetricks installed on your system. This package should be in your distributions repository.
+
 Open a Terminal and use
 ```
 WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
