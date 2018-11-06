@@ -98,7 +98,7 @@ sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ##
 To check if vulkan is working execute the command: `vulkaninfo`
 
-Here is an [Example](raw/master/VulkaninfoExample.png) how it should look.
+Here is an [Example](VulkaninfoExample.png) how it should look.
 
 If you get: Cannot create Vulkan instance. Try to restart your PC. If the error still occur and you are really sure that all packages are installed, ask in our [Discord](https://discord.gg/uuwK9EV) for more help.
 
