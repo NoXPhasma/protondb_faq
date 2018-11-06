@@ -138,7 +138,3 @@ To run games which are not on Steam, you can use [Lutris](https://lutris.net/) t
 ## Games stored on my Windows partition (NTFS) won't start
 
 By default Linux mounts NFTS partitions only writable by Root. [WIP]
-
-But if you wont install the games again, copy the game folder to .steam/steam/steamapps/common
-
-After that, try to install the game in steam. During installation, steam should then show a message like [this](https://www.howtogeek.com/wp-content/uploads/2016/08/ximg_57c6052e4bdaf.png.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.CbTqxwEXKr.jpg)
