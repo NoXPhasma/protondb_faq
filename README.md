@@ -245,7 +245,7 @@ Um zu überprüfen ob Vulkan funktioniert führen sie folgenden Befehl aus : `vu
 
 Hier ist ein Beispiel wie es aussehen sollte.
 
-Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Packete installiert wurde Fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
+Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Packete installiert wurden, fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
 
 ## Mein Spiel stürzt nach einiger zeit ab. Dies passiert aber nicht ohne Esync!
 
