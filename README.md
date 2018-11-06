@@ -16,7 +16,7 @@
 
 - Arch: Use Steam (Runtime)
 
-- Solus: Disable the native-runtime in their "linux-steam-integration-tool"
+- Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
 Note:
 
@@ -102,7 +102,7 @@ To change the Proton version, go to the Steam settings and there to the tab Stea
 
 ## Some games like Witcher 3 have missing textures/enemies
 
-This is fixed since DXVK Version 0.90 and Vulkan 1.1.88. Unfortunately at time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3.
+This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Unfortunately at time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3.
 
 ## Some reports say they made the game running by installing some software, how do I do that?
 
