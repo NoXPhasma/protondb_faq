@@ -1,6 +1,6 @@
 ## Languages
--  [English](https://github.com/NoXPhasma/protondb_faq#table-of-content)
--  [German](https://github.com/NoXPhasma/protondb_faq#German)
+-  [English](#table-of-content)
+-  [German](#German)
 -  French (Still looking for someone who can translate it)
 -  Spanish (Still looking for someone who can translate it)
 -  Italian (Soon)
@@ -154,12 +154,13 @@ By default Linux mounts NFTS partitions only writable by Root. [WIP]
 ## German
 ## Inhaltsverzeichnis
 
-- Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?
-- Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!
-- Mein Spiel zeigt gar keinen Text an
-- Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde
-- Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?
-- Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?
+- [Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?](#warum-läuft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
+- [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
+- [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
+- [Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde](#einige-spiele-wie-witcher-3-haben-fehlende-texturen-oder-unsichtbare-feinde)
+- [Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zusätzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
+- [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
+- [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
 
 ## Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?
 
@@ -292,6 +293,6 @@ Bitte lesen Sie die Anweisungen zu diesen Tools auf ihren jeweiligen Seiten.
 
 Um Spiele auszuführen, die nicht auf Steam sind, können Sie [Lutris](https:/lutris.net/) verwenden, um sie mit Wine zu benutzen. Lutris ist ein Game-Manager, der Unterstützung für eine Menge von verschiedenen Kompatibilitätslayers/Emulatoren, einschließlich Wine/Proton bietet.
 
-## Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht
+## Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!
 
 Standardmäßig stellt Linux NFTS-Partitionen nur von Root beschreibbar bereit. [WIP]
