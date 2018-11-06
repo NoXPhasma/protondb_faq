@@ -1,3 +1,10 @@
+## Languages
+-  [English](https://github.com/NoXPhasma/protondb_faq#table-of-content)
+-  German
+-  French (Soon)
+-  Spanish (Soon)
+-  Italian (Soon)
+
 ## Table of content
   - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
@@ -143,3 +150,94 @@ To run games which are not on Steam, you can use [Lutris](https://lutris.net/) t
 ## Games stored on my Windows partition (NTFS) won't start
 
 By default Linux mounts NFTS partitions only writable by Root. [WIP]
+
+## German
+## Inhaltsverzeichnis
+
+Bald
+
+## Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst garnicht?
+
+#### Überprüfen sie ihre Grafikkartentreiber ob sie auf den aktuellsten stand sind.
+
+#### Werfen Sie auf jeden fall einen Blick auf die Website WineHQ von ihren Spiel, um Workarounds zu finden, damit ihr spiel läuft. Wenn die Seite meldet, dass es mit Wine läuft, könnte es sich um ein Proton-spezifisches Problem handeln, oder vielleicht macht ein Drittanbieter-DRM wie zum Beispiel  "Denuvo "  Probleme.
+
+#### Seien sie sich auch sicher das sie Steam mit den Steam eigenen Laufzeitbibliotheken verwenden.
+
+- Arch: Steam (Runtime)
+- Solus: Hier muss im Solus eigenen "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)" die Option "native-runtime" ausgeschaltet werden.
+
+Hinweiße:
+
+- Bei den vorgegeben Grafikktreiber installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten tun sie dies auf ihre eigene Faust.
+
+- LLVM 7 oder neuer wird benötigt um die meisten Grafikkfehler beim spielen zu vermeiden. Sollte ihre Distro immer noch LLVM 6 verwenden wie zum Beispiel : Solus dann fragen sie die entwickler ob sie LLVM aktualisieren.
+
+## Installation der Grafikktreiber
+
+#### AMD
+
+Arch/Manjaro/Antergos:
+```
+sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loader vulkan-tools
+```
+
+Ubuntu 18.04:
+```
+sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
+sudo apt update
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+```
+Ubuntu 18.10
+
+```
+sudo apt install mesa-utils
+sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
+```
+##
+#### Nvidia
+
+Arch/Manjaro/Antergos:
+```
+sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
+```
+
+Ubuntu 18.10:
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install nvidia-396
+```
+
+Ubuntu 18.04:
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install nvidia-driver-396
+```
+##
+#### Intel
+
+Arch/Manjaro/Antergos:
+```
+sudo pacman -S lib32-vulkan-intel vulkan-intel lib32-mesa lib32-vulkan-icd-loader vulkan-tools
+```
+
+Ubuntu 18.10:
+```
+sudo apt install mesa-utils
+sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
+```
+
+Ubuntu 18.04:
+```
+sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
+sudo apt update
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+```
+##
+Um zu überprüfen ob Vulkan funktioniert führen sie folgenden Command aus : `vulkaninfo`
+
+Hier ist ein Beispiel wie es aussehen sollte.
+
+Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Packete installiert wurde Fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
