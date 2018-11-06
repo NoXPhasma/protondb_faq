@@ -439,7 +439,7 @@ Por ejemplo:
 WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
-#### Uso de Herramientas
+#### Usando Herramientas específicas para Proton
 
 En este momento las más populares son [Protontricks](https://github.com/Sirmentio/protontricks) y [ProtonFixes](https://github.com/simons-public/protonfixes).
 
