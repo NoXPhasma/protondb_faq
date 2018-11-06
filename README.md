@@ -157,7 +157,7 @@ By default Linux mounts NFTS partitions only writable by Root. [WIP]
 - Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?
 - Mein Spiel stürzt nach einiger zeit ab. Dies passiert aber nicht ohne Esyc!
 - Mein Spiel zeigt gar keinen Text an
-- Einige Spiele wie Witcher 3 haben fehelende Texturen oder unsichtbare Feinde
+- Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde
 - Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?
 - Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?
 
@@ -257,7 +257,7 @@ Einige Spiele benötigen Windows-Schriftarten, die installiert werden müssen. A
 
 Um die Proton-Version zu ändern, gehen Sie zu den Steam-Einstellungen und dort zum Tab Steam Play. Nun müssen Sie die Option "Use this tool instead of game-specific selections from Steam" aktivieren. Dann können Sie die Proton-Version im Drop-Down-Menü auswählen.
 
-## Einige Spiele wie Witcher 3 haben fehelende Texturen oder unsichtbare Feinde
+## Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde
 
 Das ist seit der DXVK-Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) und Vulkan 1.1.88 behoben worden. Leider zum Zeitpunkt dieses Schreibens, brauchen Sie die Beta-Treiber für Nvidia (396.54.09) und AMD-Nutzer brauchen mindestens Mesa Version 18.3.
 
