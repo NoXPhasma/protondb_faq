@@ -84,6 +84,11 @@ sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
 sudo apt-get update
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
+To check if vulkan is working execute the command: vulkaninfo
+
+Here is an example how it should look.
+
+If you get: Cannot create Vulkan instance. Try to restart your PC. If the error still occur and you are really sure that all packs are installed, ask in our [Discord](https://discord.gg/uuwK9EV) for more help.
 
 ## My game crashes after a while but works fine without esync
 
