@@ -1,7 +1,7 @@
 ## Languages
 -  [English](#table-of-content)
--  [German](#README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
--  [Spanish](#Spanish) (Translated by [Willdrick](https://github.com/Willdrick))
+-  [German](README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
+-  [Spanish](#README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
 -  French (Still looking for someone who can translate it)
 -  Italian (Soon)
 
