@@ -27,7 +27,7 @@ Note:
 
 
 ##
-### Installation of graphic card drivers
+### Graphics driver installation
 #### AMD
 
 Arch/Manjaro/Antergos:
