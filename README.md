@@ -34,7 +34,7 @@ sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loa
 Ubuntu 18.04:
 ```
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt-get update
+sudo apt update
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
 Ubuntu 18.10
@@ -54,14 +54,14 @@ sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
 Ubuntu 18.10:
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt-get update
+sudo apt update
 sudo apt install nvidia-396
 ```
 
 Ubuntu 18.04:
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt-get update
+sudo apt update
 sudo apt install nvidia-driver-396
 ```
 
@@ -81,7 +81,7 @@ sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
 Ubuntu 18.04:
 ```
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt-get update
+sudo apt update
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
 To check if vulkan is working execute the command: vulkaninfo
