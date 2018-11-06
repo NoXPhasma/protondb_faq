@@ -155,7 +155,7 @@ By default Linux mounts NFTS partitions only writable by Root. [WIP]
 ## Inhaltsverzeichnis
 
 - Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?
-- Mein Spiel stürzt nach einiger zeit ab. Dies passiert aber nicht ohne Esyc!
+- Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!
 - Mein Spiel zeigt gar keinen Text an
 - Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde
 - Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?
@@ -247,7 +247,7 @@ Hier ist ein Beispiel wie es aussehen sollte.
 
 Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Packete installiert wurden, fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
 
-## Mein Spiel stürzt nach einiger zeit ab. Dies passiert aber nicht ohne Esync!
+## Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esync!
 
 Die meisten Probleme mit esync beziehen sich auf die begrenzte Anzahl geöffneter Dateien. Bevor Sie Probleme mit esync melden, prüfen Sie, ob der Befehl "ulimit-Hn" viel mehr als 4096 meldet. Wenn nicht dann folgen sie diesen [Anweisungen](https://github.com/zfigura/wine/blob/esync/README.esync) um das Limit zu erhöhen
 
