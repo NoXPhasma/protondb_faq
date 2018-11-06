@@ -2,12 +2,12 @@
 -  [Englisch](README.md)
 -  [Deutsch](#Inhaltsverzeichnis) (Übersetzt von [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanisch](README_ESP.md) (Übersetzt von [Willdrick](https://github.com/Willdrick))
--  Französisch (Wir suchen immer noch jemanden der Lust hat die französische übersetzung zu schreiben.)
+-  Französisch (Wir suchen immer noch jemanden der Lust hat die französische Übersetzung zu schreiben.)
 -  Italienisch (Bald)
 
 ## Inhaltsverzeichnis
 
-- [Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?](#warum-läuft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
+- [Warum läuft mein Spiel so langsam, hat grafische Fehler oder startet erst gar nicht?](#warum-läuft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
 - [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
 - [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
 - [Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde](#einige-spiele-wie-witcher-3-haben-fehlende-texturen-oder-unsichtbare-feinde)
@@ -15,24 +15,24 @@
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
 
-## Warum läuft mein Spiel so langsam, hat Grafische fehler oder startet erst gar nicht?
+## Warum läuft mein Spiel so langsam, hat Grafische Fehler oder startet erst gar nicht?
 
 #### Überprüfen sie ihre Grafikkartentreiber ob sie auf den aktuellsten stand sind.
 
-#### Werfen Sie auf jeden fall einen Blick auf die Website WineHQ von ihren Spiel, um Workarounds zu finden, damit ihr spiel läuft. Wenn die Seite meldet, dass es mit Wine läuft, könnte es sich um ein Proton-spezifisches Problem handeln, oder vielleicht macht ein Drittanbieter-DRM wie zum Beispiel  "Denuvo "  Probleme.
+#### Werfen Sie auf jeden Fall einen Blick auf die Website WineHQ von ihren Spiel, um Workarounds zu finden, damit ihr spiel läuft. Wenn die Seite meldet, dass es mit Wine läuft, könnte es sich um ein Proton-spezifisches Problem handeln, oder vielleicht macht ein Drittanbieter-DRM wie zum Beispiel  "Denuvo "  Probleme.
 
 #### Seien sie sich sicher das sie Steam mit den Steam eigenen Laufzeitbibliotheken verwenden.
 
 - Arch: Steam (Runtime)
 - Solus: Hier muss im Solus eigenen "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)" die Option "native-runtime" ausgeschaltet werden.
 
-Hinweiße:
+Hinweise:
 
-- Bei den vorgegeben Grafikktreiber installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten tun sie dies auf ihre eigene Faust.
+- Bei den vorgegeben Grafiktreiber Installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten tun sie dies auf ihre eigene Faust.
 
-- LLVM 7 oder neuer wird benötigt um die meisten Grafikkfehler beim spielen zu vermeiden. Sollte ihre Distro immer noch LLVM 6 verwenden wie zum Beispiel : Solus dann fragen sie die entwickler ob sie LLVM aktualisieren.
+- LLVM 7 oder neuer wird benötigt um die meisten Grafikfehler beim spielen zu vermeiden. Sollte ihre Distro immer noch LLVM 6 verwenden wie zum Beispiel : Solus dann fragen sie die Entwickler ob sie LLVM aktualisieren.
 
-## Installation der Grafikktreiber
+## Installation der Grafiktreiber
 
 #### AMD
 
@@ -99,7 +99,7 @@ Um zu überprüfen ob Vulkan funktioniert führen sie folgenden Befehl aus : `vu
 
 Hier ist ein [Beispiel](https://raw.githubusercontent.com/NoXPhasma/protondb_faq/master/VulkaninfoExample.png) wie es aussehen sollte.
 
-Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Packete installiert wurden, fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
+Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Pakete installiert wurden, fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
 
 ## Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esync!
 
@@ -122,13 +122,13 @@ Es gibt zwei Möglichkeiten um, zusätzliche Software in das game-prefix zu inst
 #### Einsatz von Winetricks
 Stellen Sie sicher, dass Sie Winetricks auf Ihrem System installiert haben. Dieses Paket sollte sich in Ihrem Offiziellen Distributions-Repository befinden.
 
-Terminal öffnen und folgenden befehl eingeben :
+Terminal öffnen und folgenden Befehl eingeben :
 ```
 WINEPREFIX = (Steam-Ordner)/Steamapps/compatdata/(GAME-ID)/pfx/winetricks
 ```
 (GAME-ID) muss durch die Spiel-ID ersetzt werden, zum Beispiel 4000 für Garry ́s Mod, können Sie [SteamDB] (https:/steamdb.info) verwenden, um herauszufinden, welche ID Ihr Spiel hat.
 
-(Steam-Ordner) muss durch den .steam Ordner Loaction ersetzt werden.
+(Steam-Ordner) muss durch den .steam Ordner Location ersetzt werden.
 
 Hier ein Beispiel wie der Befehl am Ende auszusehen hat.
 
