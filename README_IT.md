@@ -1,12 +1,12 @@
 ## Lingue
--  [Inglese](#table-of-content)
+-  [Inglese](README.md) (Scritto da [NoXPhasma](https://github.com/NoXPhasma))
 -  [Tedesco](README_DE.md) (Tradotto da [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spagnolo](README_ESP.md) (Tradotto da [Willdrick](https://github.com/Willdrick))
 -  Francese (Ancora alla ricerca di qualcuno in grado di tradurlo)
--  [Italiano](README_IT.md) (Tradotto da [bloodis](https://github.com/Willdrick))
+-  [Italiano](README_IT.md) (Tradotto da [bloodis](https://github.com/bloodis))
 -  [Norvegese](README_NO.md) (Tradotto da [MagZu](https://github.com/magzu))
 
-## Table of content
+## Tabella dei contenuti
   - [Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno problemi di rendering?](#perche-i-miei-giochi-si-bloccano-all-avvio-sono-molto-lenti-o-hanno-problemi-di-rendering)
   - [I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato](#i-miei-giochi-si-bloccano-dopo-un-po-ma-funzionano-bene-con-lesync-disattivato)
   - [In gioco non viene mostrato nessun testo](#in-gioco-non-viene-mostrato-nessun-testo)
