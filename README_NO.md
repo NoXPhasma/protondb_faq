@@ -4,6 +4,7 @@
 -  [Spanish](README_ESP.md) (Oversatt av [Willdrick](https://github.com/Willdrick))
 -  French (Ser fremdeles etter noen som kan oversette.)
 -  Italian (Snart)
+-  [Norsk](README_NO.md) (Oversatt av [MagZu](https://github.com/magzu))
 
 ## Innholdsfortegnelse
   - [Hvorfor krasjer spillet mitt, er treg eller har grafikk problemer?](#hvorfor-krasjer-spillet-mitt-er-treg-eller-har-grafikk-problemer)
