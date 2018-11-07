@@ -4,6 +4,7 @@
 -  [Spanisch](README_ESP.md) (Übersetzt von [Willdrick](https://github.com/Willdrick))
 -  Französisch (Wir suchen immer noch jemanden der Lust hat die französische Übersetzung zu schreiben.)
 -  Italienisch (Bald)
+-  [Norwegisch](README_NO.md) (Übersetzt von [MagZu](https://github.com/magzu))
 
 ## Inhaltsverzeichnis
 
