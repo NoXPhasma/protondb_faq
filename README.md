@@ -4,6 +4,7 @@
 -  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
 -  French (Still looking for someone who can translate it)
 -  Italian (Soon)
+-  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
 
 ## Table of content
   - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
