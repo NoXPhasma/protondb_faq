@@ -2,75 +2,75 @@
 -  [English](#table-of-content)
 -  [German](README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
--  French (Still looking for someone who can translate it)
+-  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
 -  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
 -  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
 
-## Table of content
-  - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
-  - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
-  - [The game doesn't show any text](#the-game-doesnt-show-any-text)
-  - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
-  - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
-  - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
-  - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
-## Why do my games crash on start, run very slow or have rendering issues?
+## Sommaire
+  - [Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?](#pourquoi-est-ce-que-mes-jeux-echouent-a-se-lancer-ont-des-problemes-de-performance-ou-des-bugs-d-affichage)
+  - [Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé](#mon-jeu-quitte-subitement-apres-un-certain-temps-mais-fonctionne-si-esync-est-desactive)
+  - [Les textes dans mon jeu ne s'affichent pas](#les-textes-dans-mon-jeu-ne-s-affichent-pas)
+  - [Il manque des textures/ennemis dans certains jeux (notamment The Witcher 3)](#il-manque-des-textures-ennemis-dans-certains-jeux-notamment-the-witcher-3)
+  - [Certains reports mentionnent avoir fait fonctionner le jeu en installant un composant additionnel. Comment puis-je faire cela ?](#certains-reports-mentionnent-avoir-fait-fonctionner-le-jeu-en-installant-un-composant-additionnel-comment-puis-je-faire-cela)
+  - [Comment puis-je jouer à des jeux Windows que je ne possède pas sur Steam ?](#comment-puis-je-jouer-a-des-jeux-windows-que-je-ne-possede-pas-sur-steam)
+  - [Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.](#les-jeux-stockes-sur-ma-partition-windows-ntfs-ne-se-lancent-pas)
+## Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. You will find detailed informations about that in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
-#### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
+#### Vérifiez que votre système est à jour et que vous utilisez les derniers pilotes disponibles pour votre carte graphique. Vous trouverez des instructions détaillées dans notre [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+#### Consultez la page correspondant à votre jeu sur [WineHQ](https://appdb.winehq.org), vous y trouverez peut-être des instructions pour le faire fonctionner. Si WineHQ confirme que le jeu fonctionne with Wine, alors il est possible que le problème soit spécifique à Proton, ou causé par un système de DRM comme "Denuvo".
 
-#### Be sure that you run Steam with Steam Runtime libraries:
+#### Vérifiez que vous lancez Steam en utilisant les bibliothèques du Steam Runtime:
 
-- Arch: Use Steam (Runtime)
+- Arch: Utilisez `Steam (Runtime)`
 
-- Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
+- Solus: Désactivez native-runtime dans le "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
 
-## My game crashes after a while but works fine without esync
+## Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé
 
-Most issues with esync are related to the limited amount of opened files. Before reporting issues with esync, check if the command `ulimit -Hn` reports much more than 4096. If not, you can follow [these instructions](https://github.com/zfigura/wine/blob/esync/README.esync) to raise the limit.
+La plupart des problèmes avec esync sont liés à la limite imposée par le système sur le nombre de fichiers ouverts. Avant de signaler un bug avec esync, vérifiez si la commande `ulimit -Hn` affiche un nombre très supérieur à 4096. Si ce n'est pas le cas, vous pouvez suivre [ces instructions](https://github.com/zfigura/wine/blob/esync/README.esync) pour augmenter la limite.
 
-## The game doesn't show any text
+## Les textes dans mon jeu ne s'affichent pas
 
-Some games need Windows fonts to be installed. Since Proton version [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) this will be done for you automatically. If you are using Proton 3.7, try if switching to version 3.16-4 or higher fixes your problem.
+Certains jeux ont besoin que les polices de caractère de Windows soient installées. Depuis la version [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) de Proton, cela est fait pour vous automatiquement. Si vous utilisez encore Proton 3.7, essayez de passer à 3.16-4 ou une version supérieure.
 
-To change the Proton version, go to the Steam settings and there to the tab Steam Play. You need to activate the option "Use this tool instead of game-specific selections from Steam". Then you can chose the Proton version in the drop down menu.
+Pour changer de version de Proton, allez dans les options de Steam puis dans l'onglet Steam Play. Vous devez activer l'option "Utilisez cet outil au lieu des sélections spécifiques au jeu de Steam". Choisissez ensuite la version de Proton que vous souhaitez dans le menu déroulant.
 
-## Some games like Witcher 3 have missing textures/enemies
+## Il manque des textures/ennemis dans certains jeux (notamment The Witcher 3)
 
-This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Unfortunately at time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3.
+Ce problème est résolu depuis la version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) de DXVK et la version 1.1.88 de Vulkan. Malheureusement, à l'heure où ces lignes sont écrites, il vous faudra aussi les pilotes bêta de Nvidia (396.54.09), ou la version 18.3 (ou supérieure) de Mesa pour AMD.
 
-## Some reports say they made the game running by installing some software, how do I do that?
+## Certains reports mentionnent avoir fait fonctionner le jeu en installant un composant additionnel. Comment puis-je faire cela ?
 
-There are two ways to install additional software into the games prefix:
+Il y a deux façons d'installer un composant additionnel dans le préfixe d'un jeu:
 
-#### Use of Winetricks
-Make sure you have winetricks installed on your system. This package should be in your distributions repository.
+#### En utilisant Winetricks
+Vérifiez que `winetricks` est installé sur votre système. Ce paquet peut normalement être trouvé dans les dépôts de votre distribution.
 
-Open a Terminal and use
+Ouvrez un Terminal et exécutez
 ```
 WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 ```
-(GAME-ID) must be replaced with the game id for example 4000 for Garry´s Mod, you can use [SteamDB](https://steamdb.info) to find out what id your game have.
+(GAME-ID) doit être remplacé par l'ID Steam du jeu. Par exemple, 4000 pour Garry´s Mod. Vous pouvez utiliser [SteamDB](https://steamdb.info) pour trouver l'ID de votre jeu.
 
-(Steam-folder) must be replaced with your .steam folder loaction.
+(Steam-folder) doit être remplacé par l'emplacement de votre dossier `.steam`.
 
-Here is an example
+Exemple :
 
 ```
 WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
-#### Use of Tools
+#### Utilisation d'outils
 
-The two most popular currently are [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
+Les deux outils les plus utilisés à l'heure actuelle sont [Protontricks](https://github.com/Sirmentio/protontricks) et [ProtonFixes](https://github.com/simons-public/protonfixes).
 
-Please read the instructions about those tools on their respective sites.
+Vous pouvez trouver les instructions d'utilisation de ces outils sur leurs sites respectifs.
 
-## How do I run Windows games I don't own on Steam?
+## Comment puis-je jouer à des jeux Windows que je ne possède pas sur Steam ?
 
-To run games which are not on Steam, you can use [Lutris](https://lutris.net/) to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
+Pour jouer à des jeux qui ne sont pas sur Steam, vous pouvez utiliser [Lutris](https://lutris.net/) pour les faire fonctionner avec Wine. Lutris est un gestionnaire de jeux intégrant de nombreux émulateurs et outils de compatibilité, dont Wine et Proton.
 
-## Games stored on my Windows partition (NTFS) won't start
+## Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.
 
-By default Linux mounts NFTS partitions only writable by Root. [WIP]
+Par défaut, Linux monte les partitions NTFS en lecture seule (sauf pour l'utilisateur Root). [WIP]
