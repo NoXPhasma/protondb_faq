@@ -8,7 +8,7 @@
 
 ## Einführung
 
-Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwendung von ProtonDB und natürlich technische Fragen, die sehr häufig auf dem Discord gestellt werden, abdecken. Wenn du teilnehmen möchstest oder Anregungen hast, zögere  nicht, uns im [Discord](https://discord.gg/uuwK9EV) zu kontaktieren oder Issues und Pull Requests zu erstellen.
+Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwendung von ProtonDB und natürlich technische Fragen, die sehr häufig auf dem Discord gestellt werden, abdecken. Wenn Sie teilnehmen möchten oder Anregungen haben, zögern  Sie nicht uns im [Discord](https://discord.gg/uuwK9EV) zu kontaktieren oder Issues und Pull Requests zu erstellen.
 
 ## Inhaltsverzeichnis
 
@@ -22,7 +22,7 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
 
 ## [ProtonDB] Die Buttons "Run" und  "Install" scheinen im Firefox nicht zu funktionieren
-Falls Firefox dich nicht fragt, wie es mit `steam://` URLs umgehen soll, kannst du Firefox dazu zwingen. Dafür öffnest du `about:config` im Firefox, rechtsklick irgendwo in der Liste und im Menü wählst du `Neu` » `Bolean`. Als Name für den neuen Eintrag gibst du `network.protocol-handler.expose.steam` an und als Wert setzt du `false`. Nun sollte Firefox dich beim nächsten Aufruf einer `steam://` URL fragen wie er damit umgehen soll.
+Falls Firefox Sie nicht fragt, wie es mit `steam://` URLs umgehen soll, können Sie Firefox dazu zwingen. Dafür öffnen Sie `about:config` im Firefox, rechtsklick in der Liste und im Menü wählen Sie `Neu` » `Bolean`. Als Name für den neuen Eintrag geben Sie `network.protocol-handler.expose.steam` an und als Wert `false`. Nun sollte Firefox beim nächsten Aufruf einer `steam://` URL fragen wie er damit umgehen soll.
 
 ## Warum läuft mein Spiel so langsam, hat Grafische Fehler oder startet erst gar nicht?
 
