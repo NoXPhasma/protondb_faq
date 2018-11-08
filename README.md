@@ -3,7 +3,7 @@
 -  [German](README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
 -  French (Still looking for someone who can translate it)
--  Italian (Soon)
+-  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
 -  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
 
 ## Table of content
