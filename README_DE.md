@@ -18,7 +18,13 @@
 
 ## Warum läuft mein Spiel so langsam, hat Grafische Fehler oder startet erst gar nicht?
 
-#### Überprüfen sie ihre Grafikkartentreiber ob sie auf den aktuellsten stand sind.
+#### Überprüfen sie ihre Grafikkartentreiber ob sie auf den aktuellsten stand sind. Detaillierte Informationen dazu finden Sie in unserem [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+
+Hinweise:
+
+- Bei den vorgegeben Grafiktreiber Installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten tun sie dies auf ihre eigene Faust.
+
+- LLVM 7 oder neuer wird benötigt um die meisten Grafikfehler beim spielen zu vermeiden. Sollte ihre Distro immer noch LLVM 6 verwenden wie zum Beispiel : Solus dann fragen sie die Entwickler ob sie LLVM aktualisieren.
 
 #### Werfen Sie auf jeden Fall einen Blick auf die Website WineHQ von ihren Spiel, um Workarounds zu finden, damit ihr spiel läuft. Wenn die Seite meldet, dass es mit Wine läuft, könnte es sich um ein Proton-spezifisches Problem handeln, oder vielleicht macht ein Drittanbieter-DRM wie zum Beispiel  "Denuvo "  Probleme.
 
@@ -27,80 +33,7 @@
 - Arch: Steam (Runtime)
 - Solus: Hier muss im Solus eigenen "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)" die Option "native-runtime" ausgeschaltet werden.
 
-Hinweise:
 
-- Bei den vorgegeben Grafiktreiber Installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten tun sie dies auf ihre eigene Faust.
-
-- LLVM 7 oder neuer wird benötigt um die meisten Grafikfehler beim spielen zu vermeiden. Sollte ihre Distro immer noch LLVM 6 verwenden wie zum Beispiel : Solus dann fragen sie die Entwickler ob sie LLVM aktualisieren.
-
-## Installation der Grafiktreiber
-
-#### AMD
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-Ubuntu 18.10
-
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-##
-#### Nvidia
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
-```
-
-Ubuntu 18.10:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-396
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-driver-396
-```
-##
-#### Intel
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-vulkan-intel vulkan-intel lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.10:
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-##
-Um zu überprüfen ob Vulkan funktioniert führen sie folgenden Befehl aus : `vulkaninfo`
-
-Hier ist ein [Beispiel](https://raw.githubusercontent.com/NoXPhasma/protondb_faq/master/VulkaninfoExample.png) wie es aussehen sollte.
-
-Wenn sie die Fehlermeldung: "Cannot create Vulkan instance" erhalten starten sie ihren Computer neu. Sollte der Fehler immer noch auftauchen obwohl die richtigen Pakete installiert wurden, fragen sie im unseren [Discord](https://discord.gg/uuwK9EV) nach für weitere Hilfe.
 
 ## Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esync!
 
