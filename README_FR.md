@@ -1,19 +1,19 @@
 ## Languages
--  [English](#table-of-content)
--  [German](README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
--  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
--  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
--  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
--  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
+-  [Anglais](#sommaire)
+-  [Allemand](README_DE.md) (Traduit par [CrackedCrafterz](https://github.com/CrackedCrafterz))
+-  [Espagnol](README_ESP.md) (Traduit par [Willdrick](https://github.com/Willdrick))
+-  [French](README_FR.md) (Traduit par [Askannz](https://github.com/Askannz))
+-  [Italien](README_IT.md) (Traduit par [Bloodis](https://github.com/bloodis))
+-  [Norvégien](README_NO.md) (Traduit par [MagZu](https://github.com/magzu))
 
 ## Sommaire
-  - [Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?](#pourquoi-est-ce-que-mes-jeux-echouent-a-se-lancer-ont-des-problemes-de-performance-ou-des-bugs-d-affichage)
-  - [Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé](#mon-jeu-quitte-subitement-apres-un-certain-temps-mais-fonctionne-si-esync-est-desactive)
-  - [Les textes dans mon jeu ne s'affichent pas](#les-textes-dans-mon-jeu-ne-s-affichent-pas)
-  - [Il manque des textures/ennemis dans certains jeux (notamment The Witcher 3)](#il-manque-des-textures-ennemis-dans-certains-jeux-notamment-the-witcher-3)
-  - [Certains reports mentionnent avoir fait fonctionner le jeu en installant un composant additionnel. Comment puis-je faire cela ?](#certains-reports-mentionnent-avoir-fait-fonctionner-le-jeu-en-installant-un-composant-additionnel-comment-puis-je-faire-cela)
-  - [Comment puis-je jouer à des jeux Windows que je ne possède pas sur Steam ?](#comment-puis-je-jouer-a-des-jeux-windows-que-je-ne-possede-pas-sur-steam)
-  - [Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.](#les-jeux-stockes-sur-ma-partition-windows-ntfs-ne-se-lancent-pas)
+  - [Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?](#pourquoi-est-ce-que-mes-jeux-échouent-à-se-lancer,-ont-des-problèmes-de-performance-ou-des-bugs-d'affichage-?)
+  - [Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé](#mon-jeu-quitte-subitement-après-un-certain-temps,-mais-fonctionne-si-esync-est-désactivé)
+  - [Les textes dans mon jeu ne s'affichent pas](#les-textes-dans-mon-jeu-ne-s'affichent-pas)
+  - [Il manque des textures/ennemis dans certains jeux (notamment The Witcher 3)](#il-manque-des-textures/ennemis-dans-certains-jeux-(notamment-the-witcher-3))
+  - [Certains reports mentionnent avoir fait fonctionner le jeu en installant un composant additionnel. Comment puis-je faire cela ?](#il-manque-des-textures/ennemis-dans-certains-jeux-(notamment-the-witcher-3))
+  - [Comment puis-je jouer à des jeux Windows que je ne possède pas sur Steam ?](#comment-puis-je-jouer-à-des-jeux-windows-que-je-ne-possède-pas-sur-steam-?)
+  - [Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.](#les-jeux-stockés-sur-ma-partition-windows-(ntfs)-ne-se-lancent-pas.)
 ## Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?
 
 #### Vérifiez que votre système est à jour et que vous utilisez les derniers pilotes disponibles pour votre carte graphique. Vous trouverez des instructions détaillées dans notre [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
@@ -61,7 +61,7 @@ Exemple :
 WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
-#### Utilisation d'outils
+#### En utilisant des outils additionnels
 
 Les deux outils les plus utilisés à l'heure actuelle sont [Protontricks](https://github.com/Sirmentio/protontricks) et [ProtonFixes](https://github.com/simons-public/protonfixes).
 
