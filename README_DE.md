@@ -3,7 +3,7 @@
 -  [Deutsch](#Inhaltsverzeichnis) (Übersetzt von [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanisch](README_ESP.md) (Übersetzt von [Willdrick](https://github.com/Willdrick))
 -  Französisch (Wir suchen immer noch jemanden der Lust hat die französische Übersetzung zu schreiben.)
--  Italienisch (Bald)
+-  [Italienisch](README_IT.md) (Übersetzt von [Bloodis](https://github.com/bloodis))
 -  [Norwegisch](README_NO.md) (Übersetzt von [MagZu](https://github.com/magzu))
 
 ## Inhaltsverzeichnis
