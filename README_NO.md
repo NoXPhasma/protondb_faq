@@ -3,7 +3,7 @@
 -  [Tysk](README_DE.md) (Oversatt av [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanish](README_ESP.md) (Oversatt av [Willdrick](https://github.com/Willdrick))
 -  French (Ser fremdeles etter noen som kan oversette.)
--  Italian (Snart)
+-  [Italian](README_IT.md) (Oversatt av [Bloodis](https://github.com/bloodis))
 -  [Norsk](README_NO.md) (Oversatt av [MagZu](https://github.com/magzu))
 
 ## Innholdsfortegnelse
