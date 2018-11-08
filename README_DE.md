@@ -8,11 +8,11 @@
 
 ## Einführung
 
-Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwendung von ProtonDB und natürlich technische Fragen, die sehr häufig auf der Discord auftreten, abdecken. Wenn Sie teilnehmen möchten oder Anregungen haben, zögern Sie nicht, uns unter [Discord](https://discord.gg/uuwK9EV) zu kontaktieren oder uns fehler oder verbesserungsvorrschläge in github zusenden.
+Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwendung von ProtonDB und natürlich technische Fragen, die sehr häufig auf dem Discord gestellt werden, abdecken. Wenn du teilnehmen möchstest oder Anregungen hast, zögere  nicht, uns im [Discord](https://discord.gg/uuwK9EV) zu kontaktieren oder Issues und Pull Requests zu erstellen.
 
 ## Inhaltsverzeichnis
 
-- [[[ProtonDB] Die Buttons "Run " und "Install " scheinen nicht auf Firefox zu funktionieren](#protondb-die-buttons-run--und--install--scheinen-nicht-auf-firefox-zu-funktionieren)
+- [[[ProtonDB] Die Buttons "Run " und "Install " scheinen nicht auf Firefox zu funktionieren](#protondb-die-buttons-run--und--install--scheinen-im-firefox-nicht-zu-funktionieren)
 - [Warum läuft mein Spiel so langsam, hat grafische Fehler oder startet erst gar nicht?](#warum-läuft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
 - [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
 - [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
@@ -21,10 +21,8 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
 
-## [ProtonDB] Die Buttons "Run " und  "Install " scheinen nicht auf Firefox zu funktionieren
-
-Wenn Firefox Sie nicht fragt, was mit steam://URLS geschehen  soll, müssen Sie Firefox dazu zwingen. Dafür öffnen sie about:config in Firefox
-
+## [ProtonDB] Die Buttons "Run" und  "Install" scheinen im Firefox nicht zu funktionieren
+Falls Firefox dich nicht fragt, wie es mit `steam://` URLs umgehen soll, kannst du Firefox dazu zwingen. Dafür öffnest du `about:config` im Firefox, rechtsklick irgednwo in der Liste und im Menü wählst du `Neu` » `Bolean`. Als Name für den neuen Eintrag gibst du `network.protocol-handler.expose.steam` an und als Wert setzt du `false`. Nun sollte Firefox dich beim näcshten AUfruf einer `steam://` URL fragen wie er damit umgehen soll.
 
 ## Warum läuft mein Spiel so langsam, hat Grafische Fehler oder startet erst gar nicht?
 
