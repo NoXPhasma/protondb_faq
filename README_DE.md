@@ -2,12 +2,17 @@
 -  [Englisch](README.md)
 -  [Deutsch](#Inhaltsverzeichnis) (Übersetzt von [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanisch](README_ESP.md) (Übersetzt von [Willdrick](https://github.com/Willdrick))
--  Französisch (Wir suchen immer noch jemanden der Lust hat die französische Übersetzung zu schreiben.)
+-  [Französisch](README_FR.md) (Übersetzt von [Askannz](https://github.com/Askannz))
 -  [Italienisch](README_IT.md) (Übersetzt von [Bloodis](https://github.com/bloodis))
 -  [Norwegisch](README_NO.md) (Übersetzt von [MagZu](https://github.com/magzu))
 
+## Einführung
+
+Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwendung von ProtonDB und natürlich technische Fragen, die sehr häufig auf der Discord auftreten, abdecken. Wenn Sie teilnehmen möchten oder Anregungen haben, zögern Sie nicht, uns unter [Discord](https://discord.gg/uuwK9EV) zu kontaktieren oder uns fehler oder verbesserungsvorrschläge in github zusenden.
+
 ## Inhaltsverzeichnis
 
+- [[ProtonDB] Die Buttons "Run " und  "Install " scheinen nicht auf Firefox zu funktionieren]
 - [Warum läuft mein Spiel so langsam, hat grafische Fehler oder startet erst gar nicht?](#warum-läuft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
 - [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
 - [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
@@ -15,6 +20,11 @@
 - [Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zusätzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
+
+## [ProtonDB] Die Buttons "Run " und  "Install " scheinen nicht auf Firefox zu funktionieren
+
+Wenn Firefox Sie nicht fragt, was mit steam://URLS geschehen  soll, müssen Sie Firefox dazu zwingen. Dafür öffnen sie about:config in Firefox
+
 
 ## Warum läuft mein Spiel so langsam, hat Grafische Fehler oder startet erst gar nicht?
 
