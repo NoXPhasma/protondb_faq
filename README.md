@@ -11,7 +11,7 @@ With this FAQ we want to cover the most important questions related to the usage
 
 
 ## Table of content
-  - [[ProtonDB] The "Run" and "Install" buttons don't seem to work on Firefox.]()
+  - [[ProtonDB] The "Run" and "Install" buttons don't seem to work on Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
   - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [The game doesn't show any text](#the-game-doesnt-show-any-text)
