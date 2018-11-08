@@ -22,7 +22,7 @@
 
 Hinweise:
 
-- Bei den vorgegeben Grafiktreiber Installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten tun sie dies auf ihre eigene Faust.
+- Bei den vorgegeben Grafiktreiber Installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten wenden Sie sich an den Betreuer Ihrer Distribution, wie Sie sie installieren.
 
 - LLVM 7 oder neuer wird benötigt um die meisten Grafikfehler beim spielen zu vermeiden. Sollte ihre Distro immer noch LLVM 6 verwenden wie zum Beispiel : Solus dann fragen sie die Entwickler ob sie LLVM aktualisieren.
 
