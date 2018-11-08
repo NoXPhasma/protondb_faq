@@ -16,8 +16,7 @@
   - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
 ## Why do my games crash on start, run very slow or have rendering issues?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card.
-
+#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. You will find detailed informations about that in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 #### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
 
 #### Be sure that you run Steam with Steam Runtime libraries:
@@ -26,82 +25,6 @@
 
 - Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
-Note:
-
-- These are stable drivers if you want to use newer beta/devel drivers do it on your own!
-
-- LLVM 7 or newer is requiered to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
-
-
-
-##
-### Graphics driver installation
-#### AMD
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-Ubuntu 18.10
-
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-##
-#### Nvidia
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
-```
-
-Ubuntu 18.10:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-396
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-driver-396
-```
-##
-#### Intel
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-vulkan-intel vulkan-intel lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.10:
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-##
-To check if vulkan is working execute the command: `vulkaninfo`
-
-Here is an [Example](https://raw.githubusercontent.com/NoXPhasma/protondb_faq/master/VulkaninfoExample.png) how it should look.
-
-If you get: Cannot create Vulkan instance. Try to restart your PC. If the error still occur and you are really sure that all packages are installed, ask in our [Discord](https://discord.gg/uuwK9EV) for more help.
 
 ## My game crashes after a while but works fine without esync
 
