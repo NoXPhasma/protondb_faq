@@ -1,8 +1,8 @@
 ## Languages
--  [Anglais](#sommaire)
+-  [Anglais](README.md)
 -  [Allemand](README_DE.md) (Traduit par [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Espagnol](README_ESP.md) (Traduit par [Willdrick](https://github.com/Willdrick))
--  [French](README_FR.md) (Traduit par [Askannz](https://github.com/Askannz))
+-  [Français](#sommaire) (Traduit par [Askannz](https://github.com/Askannz))
 -  [Italien](README_IT.md) (Traduit par [Bloodis](https://github.com/bloodis))
 -  [Norvégien](README_NO.md) (Traduit par [MagZu](https://github.com/magzu))
 
