@@ -17,6 +17,13 @@
 ## Why do my games crash on start, run very slow or have rendering issues?
 
 #### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. You will find detailed informations about that in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+
+Note:
+
+- Currently we only cover stable drivers, if you need beta drivers, please contact the maintainer of your distribution on how to install them.
+
+- LLVM 7 or newer is requiered to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
+
 #### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
 
 #### Be sure that you run Steam with Steam Runtime libraries:
