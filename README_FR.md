@@ -7,7 +7,7 @@
 -  [Norvégien](README_NO.md) (Traduit par [MagZu](https://github.com/magzu))
 
 ## Sommaire
- - [[ProtonDB] Les boutons "Run" et "Install" ne fonctionnent pas sur Firefox.](#placeholder)
+ - [[ProtonDB] Les boutons "Run" et "Install" ne fonctionnent pas sur Firefox.](#protondb-les-boutons-run-et-install-ne-fonctionnent-pas-sur-firefox)
   - [Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?](#pourquoi-est-ce-que-mes-jeux-échouent-à-se-lancer-ont-des-problèmes-de-performance-ou-des-bugs-daffichage-)
   - [Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé](#mon-jeu-quitte-subitement-après-un-certain-temps-mais-fonctionne-si-esync-est-désactivé)
   - [Les textes dans mon jeu ne s'affichent pas](#les-textes-dans-mon-jeu-ne-saffichent-pas)
