@@ -7,6 +7,7 @@
 -  [Norvégien](README_NO.md) (Traduit par [MagZu](https://github.com/magzu))
 
 ## Sommaire
+ - [[ProtonDB] Les boutons "Run" et "Install" ne fonctionnent pas sur Firefox.](#placeholder)
   - [Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?](#pourquoi-est-ce-que-mes-jeux-échouent-à-se-lancer-ont-des-problèmes-de-performance-ou-des-bugs-daffichage-)
   - [Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé](#mon-jeu-quitte-subitement-après-un-certain-temps-mais-fonctionne-si-esync-est-désactivé)
   - [Les textes dans mon jeu ne s'affichent pas](#les-textes-dans-mon-jeu-ne-saffichent-pas)
@@ -14,9 +15,18 @@
   - [Certains reports mentionnent avoir fait fonctionner le jeu en installant un composant additionnel. Comment puis-je faire cela ?](#certains-reports-mentionnent-avoir-fait-fonctionner-le-jeu-en-installant-un-composant-additionnel-comment-puis-je-faire-cela-)
   - [Comment puis-je jouer à des jeux Windows que je ne possède pas sur Steam ?](#comment-puis-je-jouer-à-des-jeux-windows-que-je-ne-possède-pas-sur-steam-)
   - [Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.](#les-jeux-stockés-sur-ma-partition-windows-ntfs-ne-se-lancent-pas)
+## [ProtonDB] Les boutons "Run" et "Install" ne fonctionnent pas sur Firefox.
+Si Firefox ne vous a pas demandé comment gérer les URLs de type `steam://` URLS, vous devez le lui spécifier manuellement. Pour cela, ouvrez la page `about:config`, faites un clic droit n'importe où dans la liste et sélectionnez `New (Nouveau)` » `Boolean (Booléen)`. Entrez le nom `network.protocol-handler.expose.steam` et la valeur `false`. À présent, si vous cliquez sur une URL de type `steam://`, Firefox vous demandera l'action à effectuer.
 ## Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?
 
 #### Vérifiez que votre système est à jour et que vous utilisez les derniers pilotes disponibles pour votre carte graphique. Vous trouverez des instructions détaillées dans notre [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+
+Notes:
+
+- À l'heure actuelle ce guide ne couvre que les pilotes stables. Si vous avez besoin des versions bêta, consultez les instructions spécifiques à votre distribution.
+
+- Pour éviter de nombreux bugs et problèmes d'affichage sur AMD/Intel, vous avez besoin de LLVM en version 7 ou supérieure. Si votre distribution utilise toujours LLVM 6 (comme Solus), faites-vous entendre et demandez à ce que ce paquet soit mis à jour !
+
 #### Consultez la page correspondant à votre jeu sur [WineHQ](https://appdb.winehq.org), vous y trouverez peut-être des instructions pour le faire fonctionner. Si WineHQ confirme que le jeu fonctionne with Wine, alors il est possible que le problème soit spécifique à Proton, ou causé par un système de DRM comme "Denuvo".
 
 #### Vérifiez que vous lancez Steam en utilisant les bibliothèques du Steam Runtime:
