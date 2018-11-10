@@ -10,16 +10,16 @@
 Con queste FAQ vogliamo coprire le domande più importanti relative all'uso di ProtonDB e, ovviamente, le domande tecniche più ricorrenti sul canale Discord. Se vuoi partecipare, o hai dei suggerimenti, non esitare a contattarci su [Discord](https://discord.gg/uuwK9EV), oppure invia delle segnalazioni e delle richieste di pull su questa repository github.
 
 ## Tabella dei contenuti
-  -[(ProtonDB) I bottoni "Run" e "Install " non sembrano funzionare su Firefox.](#protondb-i-bottoni-run-e-install-non-sembrano-funzionare-su-firefox)
-  - [Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno problemi di rendering?](#perche-i-miei-giochi-si-bloccano-all-avvio-sono-molto-lenti-o-hanno-problemi-di-rendering)
-  - [I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato](#i-miei-giochi-si-bloccano-dopo-unpo-ma-funzionano-bene-con-lesync-disattivato)
+  - [(ProtonDB) I bottoni "Run" e "Install" non sembrano funzionare su Firefox.](#protondb-i-bottoni-run-e-install-non-sembrano-funzionare-su-firefox)
+  - [Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno problemi di rendering?](#perchè-i-miei-giochi-si-bloccano-allavvio-sono-molto-lenti-o-hanno-problemi-di-rendering)
+  - [I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato](#i-miei-giochi-si-bloccano-dopo-unpò-ma-funzionano-bene-con-lesync-disattivato)
   - [In gioco non viene mostrato nessun testo](#in-gioco-non-viene-mostrato-nessun-testo)
   - [In alcuni giochi, come The Witcher 3, sono presenti texture/modelli/nemici mancanti](#in-alcuni-giochi-come-The-Witcher-3-sono-presenti-texturemodellinemici-mancanti)
-  - [Alcuni reporter dicono di essere riusciti ad avviare il gioco installando un software,come posso farlo anche io?](#alcuni-reporter-dicono-di-essere-riusciti-ad-avviare-il-gioco-installando-un-software-come-posso-farlo-anche-io)
+  - [Alcuni reporter dicono di essere riusciti ad avviare il gioco installando un software,come posso farlo anche io?](#alcuni-reporter-dicono-di-essere-riusciti-ad-avviare-il-gioco-installando-un-softwarecome-posso-farlo-anche-io)
   - [Come eseguo giochi Windows che non possiedo su steam?](#come-eseguo-giochi-Windows-che-non-possiedo-su-steam)
   - [I giochi memorizzati sulla mia partizione Windows (NTFS) non si avviano](#i-giochi-memorizzati-sulla-mia-partizione-windows-ntfs-non-si-avviano)
 
-## (ProtonDB) I bottoni "Run" e "Install " non sembrano funzionare su Firefox.
+## (ProtonDB) I bottoni "Run" e "Install" non sembrano funzionare su Firefox.
   Se Firefox non ti chiede come gestire gli URL `steam://` , devi forzarlo a farlo. per farlo, apri `about:config` scrivendolo come indirizzo nella barra degli indirizzi, premi il tasto destro del mouse in un punto qualsiasi della lista e seleziona `Nuovo` » `Booleano`. Come nome del nuovo elemento inserisci `network.protocol-handler.expose.steam` e, come valore, `false`. Ora se cliccherai su un qualsiasi URL `steam://` Firefox dovrebbe chiederti come procedere.
 
 ## Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno proglemi di rendering?
