@@ -2,21 +2,35 @@
 -  [Inglese](README.md) (Scritto da [NoXPhasma](https://github.com/NoXPhasma))
 -  [Tedesco](README_DE.md) (Tradotto da [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spagnolo](README_ESP.md) (Tradotto da [Willdrick](https://github.com/Willdrick))
--  Francese (Ancora alla ricerca di qualcuno in grado di tradurlo)
--  [Italiano](README_IT.md) (Tradotto da [bloodis](https://github.com/bloodis))
+-  [Francese](README_FR.md) (Tradotto da [Askannz](https://github.com/Askannz))
+-  [Italiano](#tabella-dei-contenuti) (Tradotto da [bloodis](https://github.com/bloodis))
 -  [Norvegese](README_NO.md) (Tradotto da [MagZu](https://github.com/magzu))
 
+## Introduzione
+Con queste FAQ vogliamo coprire le domande più importanti relative all'uso di ProtonDB e, ovviamente, le domande tecniche più ricorrenti sul canale Discord. Se vuoi partecipare, o hai dei suggerimenti, non esitare a contattarci su [Discord](https://discord.gg/uuwK9EV), oppure invia delle segnalazioni e delle richieste di pull su questa repository github.
+
 ## Tabella dei contenuti
+  -[(ProtonDB) I bottoni "Run" e "Install " non sembrano funzionare su Firefox.](#protondb-i-bottoni-run-e-install-non-sembrano-funzionare-su-firefox)
   - [Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno problemi di rendering?](#perche-i-miei-giochi-si-bloccano-all-avvio-sono-molto-lenti-o-hanno-problemi-di-rendering)
-  - [I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato](#i-miei-giochi-si-bloccano-dopo-un-po-ma-funzionano-bene-con-lesync-disattivato)
+  - [I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato](#i-miei-giochi-si-bloccano-dopo-unpo-ma-funzionano-bene-con-lesync-disattivato)
   - [In gioco non viene mostrato nessun testo](#in-gioco-non-viene-mostrato-nessun-testo)
   - [In alcuni giochi, come The Witcher 3, sono presenti texture/modelli/nemici mancanti](#in-alcuni-giochi-come-The-Witcher-3-sono-presenti-texturemodellinemici-mancanti)
-  - [Alcuni report dicono di essere riusciti ad avviare il gioco installando qualche software,come si fà?](#alcuni-report-dicono-di-essere-riusciti-ad-avviare-il-gioco-installando-qualche-software-come-si-fa)
+  - [Alcuni reporter dicono di essere riusciti ad avviare il gioco installando un software,come posso farlo anche io?](#alcuni-reporter-dicono-di-essere-riusciti-ad-avviare-il-gioco-installando-un-software-come-posso-farlo-anche-io)
   - [Come eseguo giochi Windows che non possiedo su steam?](#come-eseguo-giochi-Windows-che-non-possiedo-su-steam)
   - [I giochi memorizzati sulla mia partizione Windows (NTFS) non si avviano](#i-giochi-memorizzati-sulla-mia-partizione-windows-ntfs-non-si-avviano)
+
+## (ProtonDB) I bottoni "Run" e "Install " non sembrano funzionare su Firefox.
+  Se Firefox non ti chiede come gestire gli URL `steam://` , devi forzarlo a farlo. per farlo, apri `about:config` scrivendolo come indirizzo nella barra degli indirizzi, premi il tasto destro del mouse in un punto qualsiasi della lista e seleziona `Nuovo` » `Booleano`. Come nome del nuovo elemento inserisci `network.protocol-handler.expose.steam` e, come valore, `false`. Ora se cliccherai su un qualsiasi URL `steam://` Firefox dovrebbe chiederti come procedere.
+
 ## Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno proglemi di rendering?
 
-#### Assicurati che il tuo sistema sia aggiornato e che vi siano installati i drivers più recenti per la tua scheda grafica.
+#### Assicurati che il tuo sistema sia aggiornato e che vi siano installati i drivers più recenti per la tua scheda grafica. Troverai informazioni più dettagliate nella nostra [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation).
+
+Note:
+
+- Al momento ci occupiamo solo dei drivers stabili, se ti servono i drivers beta, per favore contatta il gestore della tua distribuzione per ricevere supporto su come installarli.
+
+- È necessario LLVM 7 o le versioni più recenti per risolvere la maggior parte dei problemi grafici e/o di rendering. Se la tua distribuzione usa ancora LLVM 6 come, ad esempio, Solus allora chiedi che venga aggiornata!
 
 #### Dai uno sguardo alla pagina dedicata al tuo gioco su [WineHQ](https://appdb.winehq.org), potresti trovarci dei workarounds per farlo funzionare. Se la pagina riporta che il gioco funziona bene su Wine potrebbe essere un problema specifico di Proton, oppure dei DRM di terze parti come "Denuvo" potrebbero star creando dei problemi.
 
@@ -26,82 +40,6 @@
 
 - Solus: Disattiva native-runtime nel tool: "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
-Note:
-
-- Questi sono i drivers stabili, se desideri i drivers Beta/Devel devi cercarli da solo!
-
-- È necessario LLVM 7 o le versioni più recenti per risolvere la maggior parte dei problemi grafici e/o di rendering. Se la tua distribuzione usa ancora LLVM 6 come, ad esempio, Solus allora chiedi che venga aggiornata!
-
-
-
-##
-### Installazione drivers grafici
-#### AMD
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-Ubuntu 18.10
-
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-##
-#### Nvidia
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
-```
-
-Ubuntu 18.10:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-396
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-driver-396
-```
-##
-#### Intel
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-vulkan-intel vulkan-intel lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.10:
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-##
-Per controllare che vulkan funzioni usa il comando: `vulkaninfo`
-
-Questo è un'[Esempio](https://raw.githubusercontent.com/NoXPhasma/protondb_faq/master/VulkaninfoExample.png) di cosa dovresti vedere.
-
-Se ottieni: ```Cannot create Vulkan instance```. Prova a riavviare il tuo PC. Se l'errore si presenta ancora, e tu sei veramente sicuro di aver installato tutti i packages, chiedi pure aiuto nel nostro [Discord](https://discord.gg/uuwK9EV) per ricevere supporto.
 
 ## I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato
 
@@ -117,7 +55,7 @@ Per cambiare la versione di Proton, vai nelle impostazioni di Steam, dovrebbe es
 
 Questo problema è stato risolto dalla versione [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) di DXVK e dalla versione 1.1.88 di Vulkan. Sfortunatamente, al momento di questa stesura, È necessario utilizzare i drivers beta per le schede Nvidia (396.54.09) mentre gli utenti AMD hanno bisogno almeno della versione 18.3 dei drivers Mesa.
 
-## Alcuni report dicono di essere riusciti ad avviare il gioco installando qualche software,come si fà?
+## Alcuni reporter dicono di essere riusciti ad avviare il gioco installando un software,come posso farlo anche io?
 
 Ci sono due modi di installare software addizionali nel prefisso dei giochi:
 
