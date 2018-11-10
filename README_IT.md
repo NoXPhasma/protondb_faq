@@ -22,7 +22,7 @@ Con queste FAQ vogliamo coprire le domande più importanti relative all'uso di P
 ## (ProtonDB) I bottoni "Run" e "Install" non sembrano funzionare su Firefox.
   Se Firefox non ti chiede come gestire gli URL `steam://` , devi forzarlo a farlo. per farlo, apri `about:config` scrivendolo come indirizzo nella barra degli indirizzi, premi il tasto destro del mouse in un punto qualsiasi della lista e seleziona `Nuovo` » `Booleano`. Come nome del nuovo elemento inserisci `network.protocol-handler.expose.steam` e, come valore, `false`. Ora se cliccherai su un qualsiasi URL `steam://` Firefox dovrebbe chiederti come procedere.
 
-## Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno proglemi di rendering?
+## Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno problemi di rendering?
 
 #### Assicurati che il tuo sistema sia aggiornato e che vi siano installati i drivers più recenti per la tua scheda grafica. Troverai informazioni più dettagliate nella nostra [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation).
 
