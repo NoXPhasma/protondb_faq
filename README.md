@@ -55,7 +55,7 @@ This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releas
 
 ## How do I create logs of a game I run with Proton?
 
-Proton will create a log file for a particular game, if you set the launch parameter to:
+Proton will create a log file for a particular game, if you [set the launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) to:
 ```
 PROTON_LOG=1 %command%
 ```
