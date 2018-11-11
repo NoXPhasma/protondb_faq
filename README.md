@@ -16,6 +16,7 @@ With this FAQ we want to cover the most important questions related to the usage
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [The game doesn't show any text](#the-game-doesnt-show-any-text)
   - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
+  - [How do I create logs of a game I run with Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
   - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
   - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
   - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
@@ -51,6 +52,17 @@ To change the Proton version, go to the Steam settings and there to the tab Stea
 ## Some games like Witcher 3 have missing textures/enemies
 
 This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Unfortunately at time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3.
+
+## How do I create logs of a game I run with Proton?
+
+Proton will create a log file for a particular game, if you set the launch parameter to:
+```
+PROTON_LOG=1 %command%
+```
+The log file will be created in your home folder with the name scheme `steam-$STEAMID.log`. For example:
+```
+$HOME/steam-379720.log
+```
 
 ## Some reports say they made the game running by installing some software, how do I do that?
 
