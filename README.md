@@ -23,11 +23,9 @@ With this FAQ we want to cover the most important questions related to the usage
 If Firefox don't ask you, how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. As name for the new entry you chose `network.protocol-handler.expose.steam` and as value `false`. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 ## Why do my games crash on start, run very slow or have rendering issues?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. You will find detailed informations about that in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. You will find detailed informations about how to update your graphic drivers in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 
 Note:
-
-- Currently we only cover stable drivers, if you need beta drivers, please contact the maintainer of your distribution on how to install them.
 
 - LLVM 7 or newer is required to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
 
