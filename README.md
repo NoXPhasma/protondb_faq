@@ -1,5 +1,5 @@
 ## Languages
--  [English](#table-of-content) (Written by [NoXPhasma](https://github.com/NoXPhasma) & [CrackedCrafterz](https://github.com/CrackedCrafterz)
+-  [English](#table-of-content) (Written by [NoXPhasma](https://github.com/NoXPhasma) & [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [German](README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
 -  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
