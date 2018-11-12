@@ -1,5 +1,5 @@
 ## Languages
--  [English](#table-of-content)
+-  [English](#table-of-content) (Written by [NoXPhasma](https://github.com/NoXPhasma) & [CrackedCrafterz](https://github.com/CrackedCrafterz)
 -  [German](README_DE.md) (Translated by [CrackedCrafterz](https://github.com/CrackedCrafterz))
 -  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
 -  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
@@ -28,7 +28,7 @@ If Firefox don't ask you, how it should proceed with `steam://` URLS, you need t
 
 Note:
 
-- LLVM 7 or newer is required to fix the most graphic/rendering issues. If your distro still use LLVM 6 like Solus for example then tell them to update!
+- LLVM 7 or newer is required to fix the most graphic/rendering issues. If your distro still use LLVM 6 then tell them to update!
 
 #### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
 
