@@ -28,7 +28,7 @@ If Firefox don't ask you, how it should proceed with `steam://` URLS, you need t
 
 Note:
 
-- LLVM 7 or newer is required to fix the most graphic/rendering issues. If your distro still use LLVM 6 then tell them to update!
+- LLVM 7 or newer is required to fix the most graphic/rendering issues. If your [distro](https://repology.org/metapackage/llvm/versions) still use LLVM 6 then tell them to update!
 
 #### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
 
