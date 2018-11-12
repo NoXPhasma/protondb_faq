@@ -15,6 +15,7 @@ Con queste FAQ vogliamo coprire le domande più importanti relative all'uso di P
   - [I miei giochi si bloccano dopo un'pò, ma funzionano bene con l'esync disattivato](#i-miei-giochi-si-bloccano-dopo-unpò-ma-funzionano-bene-con-lesync-disattivato)
   - [In gioco non viene mostrato nessun testo](#in-gioco-non-viene-mostrato-nessun-testo)
   - [In alcuni giochi, come The Witcher 3, sono presenti texture/modelli/nemici mancanti](#in-alcuni-giochi-come-The-Witcher-3-sono-presenti-texturemodellinemici-mancanti)
+  - [Come creo i logs di un gioco che viene avviato con Proton?](#come-creo-i-logs-di-un-gioco-che-viene-avviato-con-proton)
   - [Alcuni reporter dicono di essere riusciti ad avviare il gioco installando un software,come posso farlo anche io?](#alcuni-reporter-dicono-di-essere-riusciti-ad-avviare-il-gioco-installando-un-softwarecome-posso-farlo-anche-io)
   - [Come eseguo giochi Windows che non possiedo su steam?](#come-eseguo-giochi-Windows-che-non-possiedo-su-steam)
   - [I giochi memorizzati sulla mia partizione Windows (NTFS) non si avviano](#i-giochi-memorizzati-sulla-mia-partizione-windows-ntfs-non-si-avviano)
@@ -24,13 +25,10 @@ Con queste FAQ vogliamo coprire le domande più importanti relative all'uso di P
 
 ## Perchè i miei giochi si bloccano all'avvio, sono molto lenti o hanno problemi di rendering?
 
-#### Assicurati che il tuo sistema sia aggiornato e che vi siano installati i drivers più recenti per la tua scheda grafica. Troverai informazioni più dettagliate nella nostra [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation).
+#### Assicurati che il tuo sistema sia aggiornato e che vi siano installati i drivers più recenti per la tua scheda grafica. Troverai informazioni più dettagliate su come aggiornare i drivers nella nostra [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation).
 
 Note:
-
-- Al momento ci occupiamo solo dei drivers stabili, se ti servono i drivers beta, per favore contatta il gestore della tua distribuzione per ricevere supporto su come installarli.
-
-- È necessario LLVM 7 o le versioni più recenti per risolvere la maggior parte dei problemi grafici e/o di rendering. Se la tua distribuzione usa ancora LLVM 6 come, ad esempio, Solus allora chiedi che venga aggiornata!
+- È necessario LLVM 7 o le versioni più recenti per risolvere la maggior parte dei problemi grafici e/o di rendering. Se la tua [distribuzione](https://repology.org/metapackage/llvm/versions) usa ancora LLVM 6 allora chiedi che venga aggiornata!
 
 #### Dai uno sguardo alla pagina dedicata al tuo gioco su [WineHQ](https://appdb.winehq.org), potresti trovarci dei workarounds per farlo funzionare. Se la pagina riporta che il gioco funziona bene su Wine potrebbe essere un problema specifico di Proton, oppure dei DRM di terze parti come "Denuvo" potrebbero star creando dei problemi.
 
@@ -54,6 +52,17 @@ Per cambiare la versione di Proton, vai nelle impostazioni di Steam, dovrebbe es
 ## In alcuni giochi, come The Witcher 3, sono presenti texture/modelli/nemici mancanti
 
 Questo problema è stato risolto dalla versione [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) di DXVK e dalla versione 1.1.88 di Vulkan. Sfortunatamente, al momento di questa stesura, È necessario utilizzare i drivers beta per le schede Nvidia (396.54.09) mentre gli utenti AMD hanno bisogno almeno della versione 18.3 dei drivers Mesa.
+
+## Come creo i logs di un gioco che viene avviato con Proton?
+
+Per far creare automaticamente un log a Proton devi [impostare i parametri di avvio](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) con:
+```
+PROTON_LOG=1 %command%
+```
+Il log verrà creato nella cartella home seguendo lo schema del nome `steam-$STEAMID.log`. Per esempio:
+```
+$HOME/steam-379720.log
+```
 
 ## Alcuni reporter dicono di essere riusciti ad avviare il gioco installando un software,come posso farlo anche io?
 
