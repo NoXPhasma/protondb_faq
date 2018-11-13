@@ -17,6 +17,8 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 - [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
 - [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
 - [Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde](#einige-spiele-wie-witcher-3-haben-fehlende-texturen-oder-unsichtbare-feinde)
+- [Mein Spiel hat Probleme mit den Ton zum Beispiel: fürchterliches Knacken, Knistern etc...](#Mein-Spiel-hat-Probleme-mit-den-Ton-zum- Beispiel-fürchterliches-Knacken-Knistern-etc)
+- [Wie erstelle ich Protokolle eines Spiels, das ich mit Proton ausführe?](#Wie-erstelle-ich-Protokolle-eines-Spiels-das-ich-mit-Proton- ausführe)
 - [Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zusätzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
@@ -56,7 +58,28 @@ Um die Proton-Version zu ändern, gehen Sie zu den Steam-Einstellungen und dort 
 
 ## Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde
 
-Das ist seit der DXVK-Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) und Vulkan 1.1.88 behoben worden. Leider zum Zeitpunkt dieses Schreibens, brauchen Sie die Beta-Treiber für Nvidia (396.54.09) und AMD-Nutzer brauchen mindestens Mesa Version 18.3.
+Das ist seit der DXVK-Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) und Vulkan 1.1.88 behoben worden. Leider zum Zeitpunkt dieses Schreibens, brauchen Sie die Beta-Treiber für Nvidia (396.54.09) und AMD-Nutzer brauchen mindestens Mesa Version 18.3
+
+## Mein Spiel hat Probleme mit den Ton zum Beispiel: fürchterliches Knacken, Knistern etc...
+
+In den meisten Fällen ist es ausreichend xaudio2 (xact) zu installieren. Es kann aber auch bei manchen passieren, dass damit ein ton problem gelöst wird, aber dafür ein anderes auftritt. Wie zum Beispiel in Skyrim. Aber es ist immer ein Versuch wert.
+
+Es genügt, "xaudio2_7.dll " auf native, builtin in winecfg zu setzen oder die xact mit winetricks zu installieren.
+
+Weitere Informationen zur Installation zusätzlicher Programme in das game-prefix finden sie [hier](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zusätzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
+
+## Wie erstelle ich Protokolle eines Spiels, das ich mit Proton ausführe?
+
+Proton erstellt eine Protokolldatei, wenn Sie ihr Spiel mit den folgenden [Startparameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947&l=german) starten:
+
+```
+PROTON_LOG=1 %command%
+```
+Die Protokolldatei wird in Ihrem Home-Ordner mit dem Namensschema ' steam-$STEAMID .log ' erstellt. Zum Beispiel:
+
+```
+$HOME/steam-379720.log
+```
 
 ## Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?
 
