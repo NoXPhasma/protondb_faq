@@ -76,7 +76,7 @@ $HOME/steam-379720.log
 
 ## Some reports say they made the game running by installing some software, how do I do that?
 
-There are two ways to install additional software into the games prefix:
+There are two ways to install additional software into the gameprefix:
 
 #### Use of Winetricks
 Make sure you have winetricks installed on your system. This package should be in your distributions repository.
