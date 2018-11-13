@@ -56,7 +56,7 @@ This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releas
 
 ## I have sound problems like cracking for example
 
-In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, for example, it can also solve a problem for some but can also cause a new sound problem.
+In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, for example, it can also solve a problem for some but can also cause a new sound problem, but it is always worth a try.
 
 it is sufficient to set "xaudio2_7.dll" to native, builtin in winecfg or installing xact with winetricks.
 
