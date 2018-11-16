@@ -107,4 +107,4 @@ To run games which are not on Steam, you can use [Lutris](https://lutris.net/) t
 
 ## Games stored on my Windows partition (NTFS) won't start
 
-By default Linux mounts NFTS partitions only writeable by Root. [WIP]
+By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple turorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
