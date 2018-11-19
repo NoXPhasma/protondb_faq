@@ -114,4 +114,4 @@ Um Spiele auszuführen, die nicht auf Steam sind, können Sie [Lutris](https:/lu
 
 ## Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!
 
-Standardmäßig sind Linux NFTS-Partitionen nur von Root beschreibbar. Es ist notwendig, diese Partition mit Benutzerrechten einzuhängen. [Hier](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows) finden Sie ein einfaches Tutorial, wie Sie ein NTFS-Laufwerk mit Benutzerrechten einhängen können.
+Standardmäßig hängt Linux, NFTS-Partitionen nur von Root beschreibbar ein. Es ist notwendig, diese Partition mit Benutzerrechten einzuhängen. [Hier](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows) finden Sie ein einfaches Tutorial, wie Sie ein NTFS-Laufwerk mit Benutzerrechten einhängen können.
