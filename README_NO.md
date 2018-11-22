@@ -1,6 +1,6 @@
 ## Språk
 -  [Engelsk](#table-of-content)
--  [Tysk](README_DE.md) (Oversatt av [CrackedCrafterz](https://github.com/CrackedCrafterz))
+-  [Tysk](README_DE.md) (Oversatt av [Alexander](https://github.com/Alexander88207))
 -  [Spanish](README_ESP.md) (Oversatt av [Willdrick](https://github.com/Willdrick))
 -  French (Ser fremdeles etter noen som kan oversette.)
 -  [Italian](README_IT.md) (Oversatt av [Bloodis](https://github.com/bloodis))
