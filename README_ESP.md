@@ -1,6 +1,6 @@
 ## Languages
 -  [English](README.md)
--  [German](README_DE.md) (Translated by [Alexander](https://github.com/Alexander88207))))
+-  [German](README_DE.md) (Translated by [Alexander](https://github.com/Alexander88207))
 -  [Spanish](#Tabla-de-Contenidos) (Translated by [Willdrick](https://github.com/Willdrick))
 -  French (Still looking for someone who can translate it)
 -  Italian (Soon)
