@@ -25,7 +25,7 @@ With this FAQ we want to cover the most important questions related to the usage
 If Firefox don't ask you, how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. As name for the new entry you chose `network.protocol-handler.expose.steam` and as value `false`. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 ## Why do my games crash on start, run very slow or have rendering issues?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. You will find detailed informations about how to update your graphic drivers in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+#### Be sure that your system is up-to-date and that you are using the latest drivers available your graphics card. You will find detailed informations about how to update your graphic drivers in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 
 Note:
 
@@ -62,7 +62,15 @@ it is sufficient to set "xaudio2_7.dll" to native, builtin in winecfg or install
 
 [Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
 
+## My graphic card donsn’t support vulkan what can i do now?
 
+If you really want to try to play your game, then try to start the game with the following [launch parameter]((https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947))
+```
+PROTON_USE_WINED3D11=1 %command%
+```
+Note: You will have graphical errors or poor performance depending on the game
+
+If your game doesn't start or crash then your game cannot be run with wine3d11
 ## How do I create logs of a game I run with Proton?
 
 Proton will create a log file for a particular game, if you [set the launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) to:
