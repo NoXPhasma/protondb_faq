@@ -1,6 +1,6 @@
 ## Sprachen
--  [Englisch](README.md) (Geschrieben von [NoXPhasma](https://github.com/NoXPhasma) & [CrackedCrafterz](https://github.com/CrackedCrafterz))
--  [Deutsch](#Inhaltsverzeichnis) (Übersetzt von [CrackedCrafterz](https://github.com/CrackedCrafterz))
+-  [Englisch](README.md) (Geschrieben von [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
+-  [Deutsch](#Inhaltsverzeichnis) (Übersetzt von [Alexander](https://github.com/Alexander88207))
 -  [Spanisch](README_ESP.md) (Übersetzt von [Willdrick](https://github.com/Willdrick))
 -  [Französisch](README_FR.md) (Übersetzt von [Askannz](https://github.com/Askannz))
 -  [Italienisch](README_IT.md) (Übersetzt von [Bloodis](https://github.com/bloodis))
