@@ -1,6 +1,6 @@
 ## Lingue
 -  [Inglese](README.md) (Scritto da [NoXPhasma](https://github.com/NoXPhasma))
--  [Tedesco](README_DE.md) (Tradotto da [CrackedCrafterz](https://github.com/CrackedCrafterz))
+-  [Tedesco](README_DE.md) (Tradotto da [Alexander](https://github.com/Alexander88207))
 -  [Spagnolo](README_ESP.md) (Tradotto da [Willdrick](https://github.com/Willdrick))
 -  [Francese](README_FR.md) (Tradotto da [Askannz](https://github.com/Askannz))
 -  [Italiano](#tabella-dei-contenuti) (Tradotto da [bloodis](https://github.com/bloodis))
