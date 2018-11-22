@@ -1,6 +1,6 @@
 ## Languages
 -  [Anglais](README.md)
--  [Allemand](README_DE.md) (Traduit par [CrackedCrafterz](https://github.com/CrackedCrafterz))
+-  [Allemand](README_DE.md) (Traduit par [Alexander](https://github.com/Alexander88207))
 -  [Espagnol](README_ESP.md) (Traduit par [Willdrick](https://github.com/Willdrick))
 -  [Français](#sommaire) (Traduit par [Askannz](https://github.com/Askannz))
 -  [Italien](README_IT.md) (Traduit par [Bloodis](https://github.com/bloodis))
