@@ -30,13 +30,6 @@ Falls Firefox Sie nicht fragt, wie es mit `steam://` URLs umgehen soll, können 
 
 #### Überprüfen sie ihre Grafikkartentreiber ob sie auf den aktuellsten stand sind. Detaillierte Informationen dazu finden Sie in unserem [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 
-Hinweise:
-
-- Bei den vorgegeben Grafiktreiber Installationen handelt es sich um Stabile Treiber, wenn sie Beta- oder Entwicklungsversionen nutzen möchten wenden Sie sich an den Betreuer Ihrer Distribution, wie Sie sie installieren.
-
-- LLVM 7 oder neuer wird benötigt um die meisten Grafikfehler beim spielen zu vermeiden. Sollte ihre [Distro](https://repology.org/metapackage/llvm/versions) immer noch LLVM 6 verwenden
-dann fragen sie die Entwickler, ob sie LLVM aktualisieren.
-
 #### Werfen Sie auf jeden Fall einen Blick auf die Website WineHQ von ihren Spiel, um Workarounds zu finden, damit ihr spiel läuft. Wenn die Seite meldet, dass es mit Wine läuft, könnte es sich um ein Proton-spezifisches Problem handeln, oder vielleicht macht ein Drittanbieter-DRM wie zum Beispiel  "Denuvo "  Probleme.
 
 #### Seien sie sich sicher das sie Steam mit den Steam eigenen Laufzeitbibliotheken verwenden.
