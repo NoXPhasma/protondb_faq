@@ -2,17 +2,29 @@
 -  [English](README.md)
 -  [German](README_DE.md) (Translated by [Alexander](https://github.com/Alexander88207))
 -  [Spanish](#Tabla-de-Contenidos) (Translated by [Willdrick](https://github.com/Willdrick))
--  French (Still looking for someone who can translate it)
--  Italian (Soon)
+-  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
+-  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
+-  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
+
+## Introducción
+
+Esta guía de preguntas frecuentes intenta cubrir aquellos temas relacionados al uso de ProtonDB, así como también las cuestiones técnicas que se suelen tratar en el Discord de la comunidad. Si quieres participar o dejar tus sugerencias, no dudes en contactarnos en [Discord](https://discord.gg/uuwK9EV) o utilizar "issues" o "pull requests" en este Git.
 
 ## Tabla de Contenidos
+  - [[ProtonDB] Los botones "Run" e "Install" no funcionan en FireFox.](#protondb-los-botones-run-e-install-no-funcionan-en-firefox)
   - [¿Por qué mi juego se cuelga al abrir, anda muy lento o tiene problemas de renderizado?](#por-que-mi-juego-se-cuelga-al-abrir-anda-muy-lento-o-tiene-problemas-de-renderizado)
   - [Mi juego se cuelga después de un rato pero anda bien con esync](#mi-juego-se-cuelga-despues-de-un-rato-pero-anda-bien-con-esync)
   - [No se ve el texto en el juego](#no-se-ve-el-texto-en-el-juego)
   - [En algunos juegos como Witcher 3 no se ven algunas texturas o enemigos](#en-algunos-juegos-como-witcher-3-no-se-ven-algunas-texturas-o-enemigos)
+  - [Tengo problemas con el sonido, como por ejemplo estática](#tengo-problemas-de-sonido-como-por-ejemplo-estatica)
+  - [Mi tarjeta gráfica no soporta Vulkan ¿Qué puedo hacer?](#mi-tarjeta-grafica-no-soporta-vulkan-que-puedo-hacer)
+  - [¿Cómo creo registros de un juego que corro con Proton?](#como-creo-registros-de-un-juego-que-corro-con-proton)
   - [En algunos reportes aclaran que hicieron funcionar el juego con otro programa ¿Cómo hago eso?](#en-algunos-reportes-aclaran-que-hicieron-funcionar-el-juego-con-otro-programa-como-hago-eso)
   - [¿Cómo corro juegos de Windows que no tengo en Steam?](#como-corro-juegos-de-windows-que-no-tengo-en-steam)
   - [Los juegos en mi partición de Windows (NTFS) no arrancan](#los-juegos-en-mi-particion-de-windows-ntfs-no-arrancan)
+
+## [ProtonDB] Los botones "Run" e "Install" no funcionan en FireFox.
+Si Firefox no te ofrece la elección de cómo proceder con los enlaces `steam://` deberás forzarlo. Para ello ve a `about:config` en la barra de direcciones, haz click derecho en cualquier lado y selecciona `nuevo` » `Booleano`. En el nombre escribe `network.protocol-handler.expose.steam` y dale el valor `falso` (o `false`). La próxima vez que selecciones un enlace `steam://` el FireFox te mostrará el diálogo para seleccionar la aplicación deseada.
 
 ## ¿Por qué mi juego se cuelga al abrir, anda muy lento o tiene problemas de renderizado?
 
@@ -25,85 +37,6 @@
 - Arch: Usar Steam (Runtime)
 
 - Solus: Desactivar Entorno Nativo en "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
-
-Nota:
-
-- Estas son las versiones estables de los controladores de video. Si quieres utilizar versiones más nuevas/beta, corre por tu cuenta!
-
-- La mayoría de los errores gráficos o de renderizado se corrigen con LLVM7. Si tu distro todavía usa LLVM6 (como Solus por ejemplo) diles que actualicen!
-
-
-
-##
-### Instalación de controladores de video
-#### AMD
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S vulkan-radeon lib32-vulkan-radeon lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-Ubuntu 18.10
-
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-##
-#### Nvidia
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-nvidia-utils lib32-opencl lib32-nvidia nvidia nvidia-utils
-```
-
-Ubuntu 18.10:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-396
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-driver-396
-```
-##
-#### Intel
-
-Arch/Manjaro/Antergos:
-```
-sudo pacman -S lib32-vulkan-intel vulkan-intel lib32-mesa lib32-vulkan-icd-loader vulkan-tools
-```
-
-Ubuntu 18.10:
-```
-sudo apt install mesa-utils
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-```
-
-Ubuntu 18.04:
-```
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
-```
-
-
-##
-Para saber si Vulkan está funcionando, corre el comando: `vulkaninfo`
-
-Ejemplo de cómo se debería ver:
-
-si devuelve: Cannot create Vulkan instance. Reinicia tu PC. Si el error persiste, y estás seguro de que todos los paquetes están instalados, pregunta en nuestro [Discord](https://discord.gg/uuwK9EV) para que te ayudemos.
 
 
 ## Mi juego se cuelga después de un rato pero anda bien con esync
@@ -121,6 +54,41 @@ Para cambiar la versión de Proton utilizada, ve a Steam, Parámetros y en la se
 ## En algunos juegos como Witcher 3 no se ven algunas texturas o enemigos
 
 Ésto está solucionado desde la versión [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) de DXVK y desde Vulkan 1.1.88. Desafortunadamente, en este momento necesitas los controladores beta de nVidia (396.54.09) o la última versión de Mesa (18.3) para AMD.
+
+## Tengo problemas con el sonido, como por ejemplo estática.
+
+En la mayoría de los casos, la instalación de la libería xaudio2 (xact) soluciona problemas, como por ejemplo en Skyrim, aunque ésto puede producir un nuevo problema. De todas formas siempre es un buen punto de inicio para probar.
+
+Utilizando winecfg se puede indicar la librería "xaudio2_7.dll" como "built in" o se puede instalar "xact" desde winetricks.
+
+[Aquí](#en-algunos-reportes-aclaran-que-hicieron-funcionar-el-juego-con-otro-programa-como-hago-eso) puedes encontrar más información de cómo utilizar Winetricks.
+
+## Mi tarjeta gráfica no soporta Vulkan ¿Qué puedo hacer?
+
+Puedes intentar arrancar el juego con los siguientes [parámetros de lanzamiento](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
+
+```
+PROTON_USE_WINED3D11=1 %command%
+```
+
+NOTA: Dependiendo del juego, es probable que tengas errores gráficos o problemas de rendimiento.
+Si tu juego no abre o se cuelga, significa que no puede ser utilizado con wine3d11
+
+## ¿Cómo creo registros de un juego que corro con Proton?
+
+Para crear un registro, debes [configurar los parámetros de lanzamiento](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) de steam de la siguiente forma:
+
+```
+PROTON_LOG=1 %command%
+```
+
+El archivo de registro se creará como `steam-$STEAMID.log`. 
+
+por ejemplo:
+
+```
+$HOME/steam-379720.log
+```
 
 ## En algunos reportes aclaran que hicieron funcionar el juego con otro programa ¿Cómo hago eso?
 
@@ -155,4 +123,4 @@ Para ejecutar juegos que no se encueentran en tu biblioteca de Steam puedes util
 
 ## Los juegos en mi partición de Windows (NTFS) no arrancan
 
-Linux monta los sistemas de archivos NTFS como sólo lectura para todos los usuarios salvo root. [WIP]
+Linux monta los sistemas de archivos NTFS como sólo lectura para todos los usuarios salvo root. Puedes encontrar un tutorial de cómo montar una partición NTFS con permisos de usuario en la [Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows)
