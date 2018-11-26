@@ -16,7 +16,7 @@ Esta guía de preguntas frecuentes intenta cubrir aquellos temas relacionados al
   - [Mi juego se cuelga después de un rato pero anda bien con esync](#mi-juego-se-cuelga-despues-de-un-rato-pero-anda-bien-con-esync)
   - [No se ve el texto en el juego](#no-se-ve-el-texto-en-el-juego)
   - [En algunos juegos como Witcher 3 no se ven algunas texturas o enemigos](#en-algunos-juegos-como-witcher-3-no-se-ven-algunas-texturas-o-enemigos)
-  - [Tengo problemas con el sonido, como por ejemplo estática](#tengo-problemas-de-sonido-como-por-ejemplo-estática)
+  - [Tengo problemas con el sonido, como por ejemplo estática](#tengo-problemas-con-el-sonido-como-por-ejemplo-est%C3%A1tica)
   - [Mi tarjeta gráfica no soporta Vulkan ¿Qué puedo hacer?](#mi-tarjeta-gráfica-no-soporta-vulkan-qué-puedo-hacer)
   - [¿Cómo creo registros de un juego que corro con Proton?](#como-creo-registros-de-un-juego-que-corro-con-proton)
   - [En algunos reportes aclaran que hicieron funcionar el juego con otro programa ¿Cómo hago eso?](#en-algunos-reportes-aclaran-que-hicieron-funcionar-el-juego-con-otro-programa-como-hago-eso)
