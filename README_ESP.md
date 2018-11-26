@@ -18,7 +18,7 @@ Esta guía de preguntas frecuentes intenta cubrir aquellos temas relacionados al
   - [En algunos juegos como Witcher 3 no se ven algunas texturas o enemigos](#en-algunos-juegos-como-witcher-3-no-se-ven-algunas-texturas-o-enemigos)
   - [Tengo problemas con el sonido, como por ejemplo estática](#tengo-problemas-con-el-sonido-como-por-ejemplo-est%C3%A1tica)
   - [Mi tarjeta gráfica no soporta Vulkan ¿Qué puedo hacer?](#mi-tarjeta-gráfica-no-soporta-vulkan-qué-puedo-hacer)
-  - [¿Cómo creo registros de un juego que corro con Proton?](#como-creo-registros-de-un-juego-que-corro-con-proton)
+  - [¿Cómo creo registros de un juego que corro con Proton?](#c%C3%B3mo-creo-registros-de-un-juego-que-corro-con-proton)
   - [En algunos reportes aclaran que hicieron funcionar el juego con otro programa ¿Cómo hago eso?](#en-algunos-reportes-aclaran-que-hicieron-funcionar-el-juego-con-otro-programa-como-hago-eso)
   - [¿Cómo corro juegos de Windows que no tengo en Steam?](#como-corro-juegos-de-windows-que-no-tengo-en-steam)
   - [Los juegos en mi partición de Windows (NTFS) no arrancan](#los-juegos-en-mi-particion-de-windows-ntfs-no-arrancan)
