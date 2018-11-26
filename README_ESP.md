@@ -1,10 +1,10 @@
 ## Traducciones
--  [English](README.md) (original, creado por [NoXPhasma](https://github.com/NoXPhasma))
--  [German](README_DE.md) (traducido por [Alexander](https://github.com/Alexander88207))
--  [Spanish](#Tabla-de-Contenidos) (traducido por [Willdrick](https://github.com/Willdrick))
--  [French](README_FR.md) (traducido por [Askannz](https://github.com/Askannz))
--  [Italian](README_IT.md) (traducido por [Bloodis](https://github.com/bloodis))
--  [Norwegian](README_NO.md) (traducido por [MagZu](https://github.com/magzu))
+-  [Inglés](README.md) (versión original, creada por [NoXPhasma](https://github.com/NoXPhasma))
+-  [Alemán](README_DE.md) (traducido por [Alexander](https://github.com/Alexander88207))
+-  [Español](#Tabla-de-Contenidos) (traducido por [Willdrick](https://github.com/Willdrick))
+-  [Francés](README_FR.md) (traducido por [Askannz](https://github.com/Askannz))
+-  [Italiano](README_IT.md) (traducido por [Bloodis](https://github.com/bloodis))
+-  [Noruego](README_NO.md) (traducido por [MagZu](https://github.com/magzu))
 
 ## Introducción
 
