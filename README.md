@@ -16,11 +16,13 @@ With this FAQ we want to cover the most important questions related to the usage
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [The game doesn't show any text](#the-game-doesnt-show-any-text)
   - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
+  - [Why do some games stutter at the beginning?](#Why-do-some-games-stutter-at-the-beginning)
   - [I have sound problems like crackle for example](#i-have-sound-problems-like-crackle-for-example)
   - [My graphic card donsn’t support vulkan what can i do now?](#my-graphic-card-donsnt-support-vulkan-what-can-i-do-now)
   - [How do I create logs of a game I run with Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
   - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
   - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
+  - [I have issues with my controller!](#i-have-issues-with-my-controller)
   - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
 ## [ProtonDB] The "Run" and "Install" buttons don't seem to work on Firefox.
 If Firefox don't ask you, how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. As name for the new entry you chose `network.protocol-handler.expose.steam` and as value `false`. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
@@ -36,7 +38,6 @@ If Firefox don't ask you, how it should proceed with `steam://` URLS, you need t
 
 - Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
-
 ## My game crashes after a while but works fine without esync
 
 Most issues with esync are related to the limited amount of opened files. Before reporting issues with esync, check if the command `ulimit -Hn` reports much more than 4096. If not, you can follow [these instructions](https://github.com/zfigura/wine/blob/esync/README.esync) to raise the limit.
@@ -50,6 +51,10 @@ To change the Proton version, go to the Steam settings and there to the tab Stea
 ## Some games like Witcher 3 have missing textures/enemies
 
 This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Unfortunately at time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3
+
+## Why do some games stutter at the beginning?
+
+This is quite normal. Because at the beginning the shaders have to be loaded first. So that it doesn't stutter next time, The are written directly into a so-called shader cache.
 
 ## I have sound problems like crackle for example
 
@@ -65,7 +70,7 @@ If you really want to try to play your game, then try to start the game with the
 ```
 PROTON_USE_WINED3D11=1 %command%
 ```
-Note: You will have graphical errors or poor performance depending on the game
+Note: You will have maybe graphical error's or poor performance depending on the game.
 
 If your game doesn't start or crash then your game cannot be run with wine3d11
 ## How do I create logs of a game I run with Proton?
@@ -109,6 +114,12 @@ Please read the instructions about those tools on their respective sites.
 ## How do I run Windows games I don't own on Steam?
 
 To run games which are not on Steam, you can use [Lutris](https://lutris.net/) to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
+
+## I have issues with my controller!
+
+Case #1: My controller gets recognized as player 1 & player 2 in lego games.
+
+- Fix  #1: Open the controller settings from the gameprefix with the command for example:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` and deactivate the controller "js" & "event" after that restart your session to confirm that wine is completely closed to ensure that the new changes to be loaded.
 
 ## Games stored on my Windows partition (NTFS) won't start
 
