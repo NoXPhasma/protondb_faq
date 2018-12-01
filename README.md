@@ -1,3 +1,5 @@
+![](https://github.com/NoXPhasma/protondb_faq/raw/master/logo.png)
+
 ## Languages
 -  [English](#table-of-content) (Written by [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
 -  [German](README_DE.md) (Translated by [Alexander](https://github.com/Alexander88207))
