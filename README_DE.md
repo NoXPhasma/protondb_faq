@@ -1,3 +1,5 @@
+![](https://github.com/NoXPhasma/protondb_faq/raw/master/logo.png)
+
 ## Sprachen
 -  [Englisch](README.md) (Geschrieben von [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
 -  [Deutsch](#Inhaltsverzeichnis) (Übersetzt von [Alexander](https://github.com/Alexander88207))
@@ -17,10 +19,12 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 - [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
 - [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
 - [Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde](#einige-spiele-wie-witcher-3-haben-fehlende-texturen-oder-unsichtbare-feinde)
+- [Warum ruckeln manche spiele schwer am anfang?](#warum-ruckeln-manche-spiele-schwer-am-anfang)
 - [Mein Spiel hat Probleme mit den Ton zum Beispiel: fürchterliches Knacken, Knistern etc...](#mein-spiel-hat-probleme-mit-den-ton-zum-beispiel-fürchterliches-knacken-knistern-etc)
 - [Wie erstelle ich Protokolle eines Spiels, das ich mit Proton ausführe?](#wie-erstelle-ich-protokolle-eines-spiels-das-ich-mit-proton-ausführe)
 - [Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zusätzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
+- [Ich habe Probleme mit meinen Controller!](ich-habe-probleme-mit-meinen-controller)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
 
 ## [ProtonDB] Die Buttons "Run" und  "Install" scheinen im Firefox nicht zu funktionieren
@@ -52,6 +56,10 @@ Um die Proton-Version zu ändern, gehen Sie zu den Steam-Einstellungen und dort 
 ## Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde
 
 Das ist seit der DXVK-Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) und Vulkan 1.1.88 behoben worden. Leider zum Zeitpunkt dieses Schreibens, brauchen Sie die Beta-Treiber für Nvidia (396.54.09) und AMD-Nutzer brauchen mindestens Mesa Version 18.3
+
+## Warum ruckeln manche spiele schwer am anfang?
+
+Das ist ganz normal. Denn zu Beginn müssen die Shader zuerst geladen werden. Damit es das nächste Mal nicht ruckelt, werden die direkt in einen sogenannten Shader-Cache geschrieben und dann in zukunft von dort auch gelesen.
 
 ## Mein Spiel hat Probleme mit den Ton zum Beispiel: fürchterliches Knacken, Knistern etc...
 
@@ -104,6 +112,11 @@ Bitte lesen Sie die Anweisungen zu diesen Tools auf ihren jeweiligen Seiten.
 ## Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?
 
 Um Spiele auszuführen, die nicht auf Steam sind, können Sie [Lutris](https:/lutris.net/) verwenden, um sie mit Wine zu benutzen. Lutris ist ein Game-Manager, der Unterstützung für eine Menge von verschiedenen Kompatibilitätslayers/Emulatoren, einschließlich Wine/Proton bietet.
+
+## Ich habe Probleme mit meinen Controller!
+
+Fall #1: Mein Controller wird bei Lego spielen als Spieler 1 & Spieler 2 erkannt.
+- Lösung #1: Öffnen sie die controller einstellungen von wine im gameprefix mit den Befehl `wine control` am ende. Hier ist ein Beispiel  : `WINEPREFIX =/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` und deaktivieren Sie die Controller "js" & "event ". Dannach starten Sie Ihre Sitzung neu, um sicherzustellen, dass alle Wine prozesse vollständig geschlossen sind und dass die neuen Änderungen geladen werden.
 
 ## Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!
 
