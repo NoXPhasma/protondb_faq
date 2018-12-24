@@ -128,3 +128,12 @@ Case #1: My controller gets recognized as player 1 & player 2 in lego games.
 ## Games stored on my Windows partition (NTFS) won't start
 
 By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple turorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
+
+## Punkbuster, Rockstar Social Club etc... fail during initial installation.
+
+It can happen that such things are not installed correctly the [first time](https://github.com/NoXPhasma/protondb_faq/raw/master/Initial%20installation%20example.png) and then steam does not try to install them anymore. 
+
+Each game has in the game folder one folder they are called for example: "Installers" "Redist" and so on... These then contain the installations program for PB or RGSC, these must then simply be started in the respective gameprefix with wine here's an example:
+
+`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+
