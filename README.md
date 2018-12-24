@@ -8,6 +8,8 @@
 -  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
 -  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
 
+To see who else was helping, see our our [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) graph!
+
 ## Introduction
 With this FAQ, we want to cover the most important questions related to the usage of ProtonDB and of course technical questions which occur very often on the Discord. If you want to participate or have suggestions, don't hesitate to contact us on [Discord](https://discord.gg/uuwK9EV) or send us issues and pull requests.
 
