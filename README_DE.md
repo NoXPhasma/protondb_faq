@@ -26,6 +26,7 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
 - [Ich habe Probleme mit meinen Controller!](ich-habe-probleme-mit-meinen-controller)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
+- [Punkbuster, Rockstar Social Club etc.... scheitern bei der Erstinstallation.]
 
 ## [ProtonDB] Die Buttons "Run" und  "Install" scheinen im Firefox nicht zu funktionieren
 Falls Firefox Sie nicht fragt, wie es mit `steam://` URLs umgehen soll, können Sie Firefox dazu zwingen. Dafür öffnen Sie `about:config` im Firefox, rechtsklick in der Liste und im Menü wählen Sie `Neu` » `Bolean`. Als Name für den neuen Eintrag geben Sie `network.protocol-handler.expose.steam` an und als Wert `false`. Nun sollte Firefox beim nächsten Aufruf einer `steam://` URL fragen wie er damit umgehen soll.
@@ -121,3 +122,11 @@ Fall #1: Mein Controller wird bei Lego Spielen als Spieler 1 & Spieler 2 erkannt
 ## Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!
 
 Standardmäßig hängt Linux, NFTS-Partitionen nur von Root beschreibbar ein. Es ist notwendig, diese Partition mit Benutzerrechten einzuhängen. [Hier](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows) finden Sie ein einfaches Tutorial, wie Sie ein NTFS-Laufwerk mit Benutzerrechten einhängen können.
+
+## Punkbuster, Rockstar Social Club etc.... scheitern bei der Erstinstallation.
+
+Es kann vorkommen, dass solche Dinge beim ersten Mal nicht richtig installiert werden und dann versucht Steam nicht mehr, sie zu installieren.
+
+Jedes Spiel hat im Spielordner einen Ordner, die z.b. : "Installer", "Redist" und so weiter..... heißen. Diese enthalten dann das Installationsprogramm für PB,RGSC usw...Und diese müssen dann einfach im jeweiligen Spielpräfix mit wine gestartet werden, hier ein Beispiel:
+
+`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
