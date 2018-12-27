@@ -26,7 +26,7 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 - [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
 - [Ich habe Probleme mit meinen Controller!](ich-habe-probleme-mit-meinen-controller)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
-- [Punkbuster, Rockstar Social Club etc.... scheitern bei der Erstinstallation.]
+- [Punkbuster, Rockstar Social Club etc.... scheitern bei der Erstinstallation.](#punkbuster-rockstar-social-club-etc-scheitern-bei-der-erstinstallation)
 
 ## [ProtonDB] Die Buttons "Run" und  "Install" scheinen im Firefox nicht zu funktionieren
 Falls Firefox Sie nicht fragt, wie es mit `steam://` URLs umgehen soll, können Sie Firefox dazu zwingen. Dafür öffnen Sie `about:config` im Firefox, rechtsklick in der Liste und im Menü wählen Sie `Neu` » `Bolean`. Als Name für den neuen Eintrag geben Sie `network.protocol-handler.expose.steam` an und als Wert `false`. Nun sollte Firefox beim nächsten Aufruf einer `steam://` URL fragen wie er damit umgehen soll.
