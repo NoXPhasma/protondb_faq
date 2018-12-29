@@ -138,3 +138,6 @@ Each game has in the game folder one folder they are called for example: "Instal
 
 `WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
+## My Game won't save anything or crash while creating/loading a save.
+
+You can try to start the game with this [launchparameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947): `unset LC_ALL && %command%`
