@@ -30,6 +30,7 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
   - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
   -  [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
+  - [My entire computer hangs up at some point in the game](My-entire-computer-hangs-up-at-some-point-in the-game)
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 ## Why do my games crash on start, run very slow or have rendering issues?
@@ -144,3 +145,9 @@ Each game has in the game folder one folder they are called for example: "Instal
 ## My Game won't save anything or crash while creating/loading a save.
 
 You can try to start the game with this [launchparameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947): `unset LC_ALL && %command%`
+
+## My entire computer hangs up at some point in the game.
+
+This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
+
+If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
