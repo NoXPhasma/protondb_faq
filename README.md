@@ -66,6 +66,8 @@ This is quite normal. Because at the beginning the shaders have to be loaded fir
 
 In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, for example, it can also solve a problem for some but can also cause a new sound problem, but it is always worth a try.
 
+Since proton version [3.16-5](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-5) you don't have to do anything unless you're using an older version of proton then read on here:
+
 it is sufficient to set "xaudio2_7.dll" to native, builtin in winecfg or installing xact with winetricks.
 
 [Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
