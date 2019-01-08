@@ -29,8 +29,8 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [I have issues with my controller!](#i-have-issues-with-my-controller)
   - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
   - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
-  -  [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
-  - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in the-game)
+  - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
+  - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 ## Why do my games crash on start, run very slow or have rendering issues?
