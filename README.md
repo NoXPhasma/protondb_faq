@@ -151,3 +151,6 @@ You can try to start the game with this [launchparameter](https://support.steamp
 This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
 
 If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
+
+## My Steam-Controller is not recognized even with native games, only the maus functions.
+
