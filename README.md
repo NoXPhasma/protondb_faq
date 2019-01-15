@@ -155,4 +155,23 @@ If it also happens in the latest wine version, only the developers of your graph
 
 ## My Steam-Controller is not recognized even with native games, only the mouse functions.
 
-This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it. He recommends to use the tool [sc-controller](https://github.com/kozec/sc-controller)
+This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
+
+If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games.
+```
+sudo groupadd steam
+sudo /etc/udev/rules.d/99-steam-controller-perms.rules
+```
+and add
+```
+# Valve USB devices
+SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", MODE="0666"
+# Steam Controller udev write access
+KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", TAG+="udev-acl"
+# This rule is necessary for gamepad emulation; make sure your user is in the 'steam' group
+KERNEL=="uinput", MODE="0660", GROUP="steam", OPTIONS+="static_node=uinput"
+# HTC Vive HID Sensor naming and permissions (VR GAMING)
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0bb4", ATTRS{idProduct}=="2c87", MODE="0666"
+```
+Then be sure to add yourself to the steam group with a usermod -a -G steam $USER
+
