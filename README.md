@@ -31,6 +31,7 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
   - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
   - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
+  - [My Steam-Controller is not recognized even with native games, only the mouse functions.](#my-steam-controller-is-not-recognized-even-with-native-games-only-the-mouse-functions)
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 ## Why do my games crash on start, run very slow or have rendering issues?
@@ -152,5 +153,6 @@ This could be a GPU hang but to be sure that this is not proton's fault test the
 
 If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
 
-## My Steam-Controller is not recognized even with native games, only the maus functions.
+## My Steam-Controller is not recognized even with native games, only the mouse functions.
 
+This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it. He recommends to use the tool [sc-controller](https://github.com/kozec/sc-controller)
