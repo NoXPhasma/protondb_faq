@@ -160,7 +160,7 @@ This is [@Alexander](https://github.com/Alexander88207) so far only noticed by g
 If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games.
 ```
 sudo groupadd steam
-sudo /etc/udev/rules.d/99-steam-controller-perms.rules
+sudo nano /etc/udev/rules.d/99-steam-controller-perms.rules
 ```
 and add
 ```
