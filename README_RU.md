@@ -8,14 +8,14 @@
 -  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
 -  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
 
-To see who else was helping, see our [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) graph!
+Чтобы увидеть, кто еще помогал, посмотрите наш график! [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors)
 
-## Introduction
-With this FAQ, we want to cover the most important questions related to the usage of ProtonDB and of course technical questions which occur very often on the Discord. If you want to participate or have suggestions, don't hesitate to contact us on [Discord](https://discord.gg/uuwK9EV) or send us issues and pull requests.
+## Введение
+В этом FAQ мы хотим осветить наиболее важные вопросы, связанные с использованием ProtonDB, и, конечно же, технические вопросы, которые очень часто возникают из-за разногласий. Если вы хотите принять участие или у вас есть предложения, не стесняйтесь обращаться к нам в [Discord](https://discord.gg/uuwK9EV) или отправьте нам вопросы и вытяните запросы.
 
 
-## Table of content
-  - [[ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
+## Содержание
+  - [[ProtonDB] Кнопки "Run" и "Install", похоже, не работают в Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
   - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [The game doesn't show any text](#the-game-doesnt-show-any-text)
@@ -32,137 +32,139 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
   - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
   - [My Steam-Controller is not recognized even with native games, only the mouse functions.](#my-steam-controller-is-not-recognized-even-with-native-games-only-the-mouse-functions)
-## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
-If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
-## Why do my games crash on start, run very slow or have rendering issues?
+## [ProtonDB] кнопки "Run "Установить", похоже, не работают в Firefox.
+Если Firefox не спрашивает вас, как он должен работать с URL-адресами " steam://", вам нужно заставить Firefox сделать это. Для этого откройте `about:config` в Firefox, щелкните правой кнопкой мыши в любом месте списка и выберите `New` » Boolean". Введите `network.protocol-handler.expose.steam` в качестве имени для новой записи и `false` в качестве значения. Теперь, если вы нажмете на URL `steam://`, Firefox должен спросить вас, как продолжить.
+## Почему мои игры падают при запуске, работают очень медленно или есть проблемы рендеринга?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available your graphics card. You will find detailed informations about how to update your graphic drivers in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+#### Убедитесь, что ваша система обновлена и что вы используете новейшие драйверы, доступные для вашей видеокарты. Подробную информацию об обновлении графических драйверов вы найдете в нашей [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 
-#### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
+#### Взгляните на сайте вашу игру [WineHQ](http://appdb.winehq.org), вы можете найти обходные пути, чтобы заставить её работать. Если сайт сообщает, что он работает с Wine, это может быть специфическая проблема Proton или, возможно, сторонний DRM, такой как "Denuvo", создает проблемы здесь.
 
-#### Be sure that you run Steam with Steam Runtime libraries:
+#### Убедитесь, что вы запускаете Steam со Steam Runtime библиотеками:
 
 - Arch: Use Steam (Runtime)
 
 - Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
-## My game crashes after a while but works fine without esync
+## Моя игра вылетает через некоторое время, но отлично работает без синхронизации
 
-Most issues with esync are related to the limited amount of opened files. Before reporting issues with esync, check if the command `ulimit -Hn` reports much more than 4096. If not, you can follow [these instructions](https://github.com/zfigura/wine/blob/esync/README.esync) to raise the limit.
+Большинство проблем с sync связаны с ограниченным количеством открытых файлов. Прежде чем сообщать о проблемах с синхронизацией, проверьте, сообщает ли команда `ulimit -Hn` намного больше, чем 4096. Если нет, вы можете следуя [этим инструкциям](https://github.com/zfigura/wine/blob/async/README.esync) увеличить лимит.
 
-## The game doesn't show any text
+## Игра не показывает текст
 
-Some games need Windows fonts to be installed. Since Proton version [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) this will be done for you automatically. If you are using Proton 3.7, see if switching to version 3.16-4 or higher fixes your problem.
+Некоторые игры требуют установки шрифтов Windows. Начиная с версии Proton [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) это будет сделано автоматически. Если вы используете Proton 3.7, проверьте, исправляет ли переход на версию 3.16-4 или выше, вашу проблему.
 
-To change the Proton version, go to the Steam settings and then to the tab Steam Play. You need to activate the option "Use this tool instead of game-specific selections from Steam". Then you can chose the Proton version in the drop down menu.
+Чтобы изменить версию Proton, перейдите в настройки Steam, а затем во вкладку Steam Play. Вам необходимо активировать опцию "Enable Steam Play for all other titles". После этого вы можете выбрать версию Proton в выпадающем меню. 
 
-## Some games like Witcher 3 have missing textures/enemies
+## В некоторых играх, таких как Ведьмак 3, отсутствуют текстуры/враги
 
-This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Unfortunately at the time of this writing, you need beta drivers for Nvidia (396.54.09) and AMD users need at least Mesa version 18.3
+Это исправлено с DXVK версии [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) и Vulkan 1.1.88. К сожалению, на момент написания этой статьи вам нужны бета-драйверы для Nvidia (396.54.09), а пользователям AMD - как минимум Mesa версии 18.3
 
-## Why do some games stutter at the beginning?
+## Почему некоторые игры заикаются в начале?
 
-This is quite normal. Because at the beginning the shaders have to be loaded first. So that it doesn't stutter next time, The are written directly into a so-called shader cache.
+Это вполне нормально. Потому что в начале шейдеры должны быть загружены первыми. Чтобы они не заикались в следующий раз, они записываются непосредственно в так называемый кэш шейдеров.
 
-## I have sound problems like crackle for example
+## У меня есть проблемы со звуком, как треск, например
 
-In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, for example, it can also solve a problem for some but can also cause a new sound problem, but it is always worth a try.
+В большинстве случаев, эту проблему решает установка xaudio2 (xact), но в таких случаях, как Skyrim, например, он также может решить некоторые проблемы, но также может вызвать новую проблему звука, но это всегда стоит попробовать.
 
-Since proton version [3.16-5](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-5) you don't have to do anything unless you're using an older version of proton then read on here:
+Начиная с версии Proton [3.16-5](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-5) вам не нужно ничего делать, если вы не используете старую версию Proton, а затем читайте здесь:
 
-it is sufficient to set "xaudio2_7.dll" to native, builtin in winecfg or installing xact with winetricks.
+достаточно установить "xaudio2_7.dll" в родной, или установить встроенный, xact, в winecfg с помощью winetricks.
 
-[Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
+[Здесь](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) вы найдете более подробную информацию о том, как установить дополнительные программы в вашем gameprefix.
 
-## My graphic card doesn't support vulkan what can i do now?
+## Моя графическая карта не поддерживает Vulkan что я могу сделать сейчас?
 
-If you really want to try to play your game, then try to start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
-```
+Если вы действительно хотите попробовать сыграть в свою игру, попробуйте запустить игру со следующим [параметром запуска](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
+``
 PROTON_USE_WINED3D11=1 %command%
-```
-Note: You will have maybe graphical error's or poor performance depending on the game.
+``
+Примечание: Вы возможно будете иметь графические ошибки или низкую производительность, в зависимости от игры.
 
-If your game doesn't start or crash then your game cannot be run with wine3d11
-## How do I create logs of a game I run with Proton?
+Если игра не запускается или аварийно завершается, ее нельзя запустить с помощью wine3d11
 
-Proton will create a log file for a particular game, if you [set the launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) to:
+## Как создать логи игры, которую я запускаю с Proton?
+
+Протон создаст файл журнала для конкретной игры, если вы [установите параметр запуска](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947):
 ```
 PROTON_LOG=1 %command%
 ```
-The log file will be created in your home folder with the name scheme `steam-$STEAMID.log`. For example:
+Файл журнала будет создан в вашей домашней папке со схемой имен `steam-$STEAMID.log`. Например:
 ```
 $HOME/steam-379720.log
 ```
 
-## Some reports say they made the game running by installing some software, how do I do that?
+## Некоторые отчеты говорят, что они сделали игру работающей, установив некоторое программное обеспечение, как я могу это сделать?
 
-There are two ways to install additional software into the gameprefix:
+Есть два способа установки дополнительного программного обеспечения в gameprefix:
 
-#### Use of Winetricks
-Make sure you have winetricks installed on your system. This package should be in your distributions repository.
+#### Использование Winetricks
+Убедитесь, что в вашей системе установлен winetricks. Этот пакет должен находиться в репозитории дистрибутивов.
 
-Open a Terminal and use
+Откройте терминал и используйте
 ```
 WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 ```
-(GAME-ID) must be replaced with the game id for example 4000 for Garry´s Mod, you can use [SteamDB](https://steamdb.info) to find out what id your game have.
+(GAME-ID) необходимо заменить, к примеру для Garrys Mod game id 4000. Можно использовать [SteamDB](https://steamdb.info), чтобы узнать, какой id у вашей игры.
 
-(Steam-folder) must be replaced with your .steam folder location.
+(Steam-папка) должна быть заменена на вашу .Steam папку.
 
-Here is an example
+Вот пример
 
 ```
 WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
-#### Use of Tools
+#### Использование инстурментов
 
-The two most popular currently are [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
+Два наиболее популярных в настоящее время являются [Protontricks](https://github.com/Sirmentio/proton трюки) и [ProtonFixes](https://github.com/simons-public/protonfixes).
 
-Please read the instructions about those tools on their respective sites.
+Пожалуйста, ознакомьтесь с инструкциями об этих инструментах на соответствующих сайтах.
 
-## How do I run Windows games I don't own on Steam?
+## Как запустить Windows игры не мз Steam?
 
-To run games which are not on Steam, you can use [Lutris](https://lutris.net/) to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
+Для запуска игр, которых нет в Steam, вы можете использовать [Lutris](https://lutris.net/) запуская их с Wine. Lutris игровой менеджер, который поддерживает больше разных совместимых прослоек/эмуляторов, включая Wine/Proton.
 
-## I have issues with my controller!
+## У меня проблемы с контроллером!
 
-Case #1: My controller gets recognized as player 1 & player 2 in lego games.
+Случай №1: Мой контроллер распознается как игрок 1 и игрок 2 в играх Lego.
 
-- Fix  #1: Open the controller settings from the gameprefix with the command for example:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` and deactivate the controller "js" & "event" after that restart your session to confirm that wine is completely closed to ensure that the new changes to be loaded.
+- Fix #1: Откройте настройки контроллера от gameprefix с командной например:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000pfx/ wine control  и  отключите контроллер "js" & "event" после этого перезапустите сессию, чтобы подтвердить, что Wine полностью закрыт, дабы гарантировать, что новые изменения загрузятся.
 
-## Games stored on my Windows partition (NTFS) won't start
+## Игры, сохраненные в разделе Windows (NTFS), не запускаются
 
-By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple turorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
+По умолчанию Linux монтирует разделы NTFS только с правами Root. Необходимо подключить этот раздел с правами пользователя. Вы найдете простой turorial о том, как подключить диск NTFS с правами пользователя на [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
 
-## Punkbuster, Rockstar Social Club etc... fail during initial installation.
+## Punkbuster, Rockstar Social Club и др... фейл в процессе начальной установки.
 
-It can happen that such things are not installed correctly the [first time](https://github.com/NoXPhasma/protondb_faq/raw/master/Initial%20installation%20example.png) and then steam does not try to install them anymore. 
+Может так случиться, что такие вещи неправильно установлены  [первый раз](https://github.com/NoXPhasma/protondb_faq/raw/master/Initial%20installation%20example.png) и тогда Steam больше не пытается их установить.
 
-Each game has in the game folder one folder they are called for example: "Installers" "Redist" and so on... These then contain the installations program for PB or RGSC, these must then simply be started in the respective gameprefix with wine here's an example:
+Каждая игра имеет в папке с игрой одну папку, она называется например: "Installers" "Redist" и так далее... Затем она содержит программу установки для PB или RGSC, они должны быть просто запущены в соответствующем gameprefix с Wine, вот пример:
 
 `WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
-## My Game won't save anything or crash while creating/loading a save.
+## Моя игра ничего не сохраняет или падает при создании/загрузке сохранения.
 
-You can try to start the game with this [launchparameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947): `unset LC_ALL && %command%`
+Вы можете попробовать начать игру с этого [параметра запуска](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947): `unset LC_ALL && %command%`
 
-## My entire computer hangs up at some point in the game.
+## Весь мой компьютер зависает в какой-то момент игры.
 
-This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
+Это может GPU висеть, но чтобы быть уверенным, что это не ошибка Proton, проверьте игру с последней версией Wine в первую очередь.
 
-If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
+Если это также происходит с последней версией Wine, только разработчики вашего графического драйвера ([nvidia](http://nvidia.custhelp.com/app/answers/detail/a_id/44) или [mesa](https://www.mesa3d.org/bugs.html)) или редко [dxvk](https://github.com/doitsujin/dxvk/issues) могут помочь вам. К примеру Radeon в игре Ведьмак 3, тогда вам следует переключиться на драйвер AMDVLK. (http://uploaded.net/file/tvzorp36/from/x65rhk)
 
-## My Steam-Controller is not recognized even with native games, only the mouse functions.
 
-This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
+## Мой Steam-контроллер не распознается даже в нативных играх, работает только мышь.
 
-If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games.
+Это пока что замечено только самим [@Alexander](https://github.com/Alexander88207) на gento и дистрибутивах на его основе.
+
+Если вы играете на Linux с помощью Steam и у вас есть Steam контроллер, вы, возможно, заметили что-то интересное. Контроллер Steam работает, но не работает в играх.
 ```
 sudo groupadd steam
 sudo /etc/udev/rules.d/99-steam-controller-perms.rules
 ```
-and add
+и добавить
 ```
 # Valve USB devices
 SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", MODE="0666"
@@ -173,5 +175,5 @@ KERNEL=="uinput", MODE="0660", GROUP="steam", OPTIONS+="static_node=uinput"
 # HTC Vive HID Sensor naming and permissions (VR GAMING)
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0bb4", ATTRS{idProduct}=="2c87", MODE="0666"
 ```
-Then be sure to add yourself to the steam group with a usermod -a -G steam $USER
+Затем обязательно добавьте себя в группу Steam с помощью usermod -a -G steam $USER
 
