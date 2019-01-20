@@ -31,7 +31,6 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
   - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
   - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
-  - [My Steam-Controller is not recognized even with native games, only the mouse functions.](#my-steam-controller-is-not-recognized-even-with-native-games-only-the-mouse-functions)
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 ## Why do my games crash on start, run very slow or have rendering issues?
@@ -131,6 +130,28 @@ Case #1: My controller gets recognized as player 1 & player 2 in lego games.
 
 - Fix  #1: Open the controller settings from the gameprefix with the command for example:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` and deactivate the controller "js" & "event" after that restart your session to confirm that wine is completely closed to ensure that the new changes to be loaded.
 
+Case #2: My Steam-Controller is not recognized even with native games, only the mouse functions.
+
+- Fix #2: This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
+
+If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games.
+```
+sudo groupadd steam
+sudo gedit /etc/udev/rules.d/99-steam-controller-perms.rules
+```
+and add
+```
+# Valve USB devices
+SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", MODE="0666"
+# Steam Controller udev write access
+KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", TAG+="udev-acl"
+# This rule is necessary for gamepad emulation; make sure your user is in the 'steam' group
+KERNEL=="uinput", MODE="0660", GROUP="steam", OPTIONS+="static_node=uinput"
+# HTC Vive HID Sensor naming and permissions (VR GAMING)
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0bb4", ATTRS{idProduct}=="2c87", MODE="0666"
+```
+Then be sure to add yourself to the steam group with a `usermod -a -G steam $USER`
+
 ## Games stored on my Windows partition (NTFS) won't start
 
 By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple turorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
@@ -152,26 +173,4 @@ You can try to start the game with this [launchparameter](https://support.steamp
 This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
 
 If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
-
-## My Steam-Controller is not recognized even with native games, only the mouse functions.
-
-This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
-
-If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games.
-```
-sudo groupadd steam
-sudo nano /etc/udev/rules.d/99-steam-controller-perms.rules
-```
-and add
-```
-# Valve USB devices
-SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", MODE="0666"
-# Steam Controller udev write access
-KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", TAG+="udev-acl"
-# This rule is necessary for gamepad emulation; make sure your user is in the 'steam' group
-KERNEL=="uinput", MODE="0660", GROUP="steam", OPTIONS+="static_node=uinput"
-# HTC Vive HID Sensor naming and permissions (VR GAMING)
-KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0bb4", ATTRS{idProduct}=="2c87", MODE="0666"
-```
-Then be sure to add yourself to the steam group with a usermod -a -G steam $USER
 
