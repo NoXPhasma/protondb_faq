@@ -122,7 +122,9 @@ Please read the instructions about those tools on their respective sites.
 
 ## How do I run Windows games I don't own on Steam?
 
-To run games which are not on Steam, you can use [Lutris](https://lutris.net/) to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
+Since the last steam beta, it is now possible to insert a foreign .exe into steam and execute it with proton.
+
+But we still recommend [Lutris](https://lutris.net/) for some things, though to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
 
 ## I have issues with my controller!
 
