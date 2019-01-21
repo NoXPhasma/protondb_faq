@@ -134,7 +134,7 @@ Case #2: My Steam-Controller is not recognized even with native games, only the 
 
 - Fix #2: This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
 
-If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games.
+If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games or get's not displayed under wine control.
 ```
 sudo groupadd steam
 sudo gedit /etc/udev/rules.d/99-steam-controller-perms.rules
