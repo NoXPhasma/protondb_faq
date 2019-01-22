@@ -16,6 +16,8 @@ With this FAQ, we want to cover the most important questions related to the usag
 
 ## Table of content
   - [[ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
+  - [[ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
+](#protondb-at-the-site-my-game-is-displayed-as-a-windows-game-but-it-have-a-native-port-or-the-other-way-round)
   - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [The game doesn't show any text](#the-game-doesnt-show-any-text)
@@ -33,6 +35,11 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
+
+## [ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
+
+Protondb obtains the data from steamdb and these in turn from the developers of the respective game. So if the developers had a native port like for example at rust and it was closed then the game will be shown as a windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
+
 ## Why do my games crash on start, run very slow or have rendering issues?
 
 #### Be sure that your system is up-to-date and that you are using the latest drivers available your graphics card. You will find detailed informations about how to update your graphic drivers in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
