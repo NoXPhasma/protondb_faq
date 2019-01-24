@@ -24,7 +24,7 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
   - [Why do some games stutter at the beginning?](#Why-do-some-games-stutter-at-the-beginning)
   - [I have sound problems like crackle for example](#i-have-sound-problems-like-crackle-for-example)
-  - [My graphic card doesn’t support vulkan what can i do now?](#my-graphic-card-doesnt-support-vulkan-what-can-i-do-now)
+  - [My graphic card doesn’t support Vulkan what can i do now?](#my-graphic-card-doesnt-support-vulkan-what-can-i-do-now)
   - [How do I create logs of a game I run with Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
   - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
   - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
@@ -38,7 +38,7 @@ If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need 
 
 ## [ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
 
-Protondb obtains the data from steamdb and these in turn from the developers of the respective game. So if the developers had a native port like for example at rust and it was closed then the game will be shown as a windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
+ProtonDB obtains the data from SteamDB and these in turn from the developers of the respective game. So if the developers had a native port like for example at rust and it was closed then the game will be shown as a windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
 
 ## Why do my games crash on start, run very slow or have rendering issues?
 
@@ -76,11 +76,11 @@ In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, f
 
 Since proton version [3.16-5](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-5) you don't have to do anything unless you're using an older version of proton then read on here:
 
-it is sufficient to set "xaudio2_7.dll" to native, builtin in winecfg or installing xact with winetricks.
+it is sufficient to set "xaudio2_7.dll" to native, built-in in winecfg or installing xact with winetricks.
 
 [Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
 
-## My graphic card doesn't support vulkan what can i do now?
+## My graphic card doesn't support Vulkan what can i do now?
 
 If you really want to try to play your game, then try to start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
 ```
@@ -143,7 +143,7 @@ Case #2: My Steam-Controller is not recognized even with native games, only the 
 
 - Fix #2: This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
 
-If you game on linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games or get's not displayed under wine control.
+If you game on Linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games or is not displayed under wine control.
 ```
 sudo groupadd steam
 sudo gedit /etc/udev/rules.d/99-steam-controller-perms.rules
@@ -163,7 +163,7 @@ Then be sure to add yourself to the steam group with a `usermod -a -G steam $USE
 
 ## Games stored on my Windows partition (NTFS) won't start
 
-By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple turorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
+By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple tutorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
 
 ## Punkbuster, Rockstar Social Club etc... fail during initial installation.
 
@@ -182,4 +182,3 @@ You can try to start the game with this [launchparameter](https://support.steamp
 This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
 
 If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
-
