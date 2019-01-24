@@ -24,7 +24,7 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
   - [Why do some games stutter at the beginning?](#Why-do-some-games-stutter-at-the-beginning)
   - [I have sound problems like crackle for example](#i-have-sound-problems-like-crackle-for-example)
-  - [My graphic card donsn’t support vulkan what can i do now?](#my-graphic-card-donsnt-support-vulkan-what-can-i-do-now)
+  - [My graphic card doesn’t support vulkan what can i do now?](#my-graphic-card-doesnt-support-vulkan-what-can-i-do-now)
   - [How do I create logs of a game I run with Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
   - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
   - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
