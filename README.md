@@ -169,7 +169,7 @@ By default Linux mounts NFTS partitions only writeable by Root. It is necessary 
 
 It can happen that such things are not installed correctly the [first time](https://github.com/NoXPhasma/protondb_faq/raw/master/Initial%20installation%20example.png) and then steam does not try to install them anymore. 
 
-Each game has in the game folder one folder they are called for example: "Installers" "Redist" and so on... These then contain the installations program for PB or RGSC, these must then simply be started in the respective gameprefix with wine here's an example:
+Each game has a folder in the game folder which for example are called so: "Installers" "Redist" and so on...... These folders contain the installation program for PB or RGSC, these must be started in the corresponding game prefix with wine, here an example: 
 
 `WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
@@ -181,4 +181,4 @@ You can try to start the game with this [launchparameter](https://support.steamp
 
 This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
 
-If it also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
+if this also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
