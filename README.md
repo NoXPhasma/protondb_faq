@@ -24,7 +24,7 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
   - [Why do some games stutter at the beginning?](#Why-do-some-games-stutter-at-the-beginning)
   - [I have sound problems like crackle for example](#i-have-sound-problems-like-crackle-for-example)
-  - [My graphic card doesn’t support Vulkan what can i do now?](#my-graphic-card-doesnt-support-vulkan-what-can-i-do-now)
+  - [I want to play a game without DXVK](#i-want-to-play-a-game-without-dxvk)
   - [How do I create logs of a game I run with Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
   - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
   - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
@@ -80,9 +80,9 @@ it is sufficient to set "xaudio2_7.dll" to native, built-in in winecfg or instal
 
 [Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
 
-## My graphic card doesn't support Vulkan what can i do now?
+## I want to play a game without DXVK.
 
-If you really want to try to play your game, then try to start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
+If you really want to try to play your game without DXVK, then try to start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
 ```
 PROTON_USE_WINED3D11=1 %command%
 ```
