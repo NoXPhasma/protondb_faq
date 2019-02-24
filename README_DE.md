@@ -146,5 +146,5 @@ Sie können versuchen das Spiel mit dem folgenden [Startparameter](https://suppo
 
 Dies könnte ein sog. "GPU Hang" sein. Das beduetet das der Treiber der Grafikkarte abgestürzt ist, aber nicht wiederhergestellt werden konnte.
 
-Wenn dies auch in der neuesten Wine version auch der Fall ist, können nur die Entwickler Ihres Grafiktreibers [nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) oder [mesa](https: / /www.mesa3d.org/bugs.html)) ihnen helfen das Problem zu lösen. Selten kann es auch etwas bringen das Problem trotzdem den [dxvk Entwickler](https://github.com/doitsujin/dxvk/issues) zu melden.
+Wenn dies auch in der neuesten Wine version auch der Fall ist, können nur die Entwickler Ihres Grafiktreibers [nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) oder [mesa](https: / /www.mesa3d.org/bugs.html) ihnen helfen das Problem zu lösen. Selten kann es auch etwas bringen das Problem trotzdem den [dxvk Entwickler](https://github.com/doitsujin/dxvk/issues) zu melden.
 
