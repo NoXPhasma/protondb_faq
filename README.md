@@ -70,6 +70,8 @@ This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releas
 
 This is quite normal. Because at the beginning the shaders have to be loaded first. So that it doesn't stutter next time, The are written directly into a so-called shader cache.
 
+Note that the dxvk cache is not related to the "Shader Pre-Caching" by Steam.
+
 ## I have sound problems like crackle for example
 
 In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, for example, it can also solve a problem for some but can also cause a new sound problem, but it is always worth a try.
@@ -144,22 +146,8 @@ Case #2: My Steam-Controller is not recognized even with native games, only the 
 - Fix #2: This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
 
 If you game on Linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games or is not displayed under wine control.
-```
-sudo groupadd steam
-sudo gedit /etc/udev/rules.d/99-steam-controller-perms.rules
-```
-and add
-```
-# Valve USB devices
-SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", MODE="0666"
-# Steam Controller udev write access
-KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", TAG+="udev-acl"
-# This rule is necessary for gamepad emulation; make sure your user is in the 'steam' group
-KERNEL=="uinput", MODE="0660", GROUP="steam", OPTIONS+="static_node=uinput"
-# HTC Vive HID Sensor naming and permissions (VR GAMING)
-KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0bb4", ATTRS{idProduct}=="2c87", MODE="0666"
-```
-Then be sure to add yourself to the steam group with a `usermod -a -G steam $USER`
+
+We recommend to use the tool [sc-controller)](https://github.com/kozec/sc-controller) to walkaround this issue.
 
 ## Games stored on my Windows partition (NTFS) won't start
 
