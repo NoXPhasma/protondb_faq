@@ -147,7 +147,7 @@ Case #2: My Steam-Controller is not recognized even with native games, only the 
 
 If you game on Linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games or is not displayed under wine control.
 
-We recommend to use the tool [sc-controller)](https://github.com/kozec/sc-controller) to walkaround this issue.
+We recommend to use the tool [sc-controller)](https://github.com/kozec/sc-controller) to workaround this issue.
 
 ## Games stored on my Windows partition (NTFS) won't start
 
