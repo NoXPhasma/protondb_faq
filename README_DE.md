@@ -119,6 +119,11 @@ Um Spiele auszuführen, die nicht auf Steam sind, können Sie [Lutris](https:/lu
 Fall #1: Mein Controller wird bei Lego Spielen als Spieler 1 & Spieler 2 erkannt.
 - Lösung #1: Öffnen sie die controller einstellungen von wine im gameprefix mit den Befehl `wine control` am ende. Hier ist ein Beispiel  : `WINEPREFIX =/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` und deaktivieren Sie die Controller "js" & "event ". Dannach starten Sie Ihre Sitzung neu, um sicherzustellen, dass alle Wine prozesse vollständig geschlossen sind und dass die neuen Änderungen geladen werden.
 
+Fall #2: Der Steam-Controller funktioniert auf dem Desktop, wird aber im Spiel nicht erkannt.
+- Lösung #2: Dies ist [Alexander](https://github.com/Alexander88207) bisher nur von gentoo selbst und darauf basierenden Distributionen bemerkt worden.
+
+Das Problem kann mit dem Tool "[sc-controller](https://github.com/kozec/sc-controller)" umgangen werden.
+
 ## Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!
 
 Standardmäßig hängt Linux, NFTS-Partitionen nur von Root beschreibbar ein. Es ist notwendig, diese Partition mit Benutzerrechten einzuhängen. [Hier](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows) finden Sie ein einfaches Tutorial, wie Sie ein NTFS-Laufwerk mit Benutzerrechten einhängen können.
@@ -130,3 +135,16 @@ Es kann vorkommen, dass solche Dinge beim ersten Mal nicht richtig installiert w
 Jedes Spiel hat im Spielordner einen Ordner, die z.b. : "Installer", "Redist" und so weiter..... heißen. Diese enthalten dann das Installationsprogramm für PB,RGSC usw...Und diese müssen dann einfach im jeweiligen Spielpräfix mit wine gestartet werden, hier ein Beispiel:
 
 `WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+
+## Mein Spiel speichert nichts oder stürzt beim laden eines Spielstandes ab.
+
+Sie können versuchen das Spiel mit dem folgenden [Startparameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947&l=german) zu starten.
+
+`unset LC_ALL && %command%`
+
+## Mein ganzes System hängt sich am einer gewissen Stelle im Spiel auf.
+
+Dies könnte ein sog. "GPU Hang" sein. Das beduetet das der Treiber der Grafikkarte abgestürzt ist, aber nicht wiederhergestellt werden konnte.
+
+Wenn dies auch in der neuesten Wine version auch der Fall ist, können nur die Entwickler Ihres Grafiktreibers ([nvidia] (https://nvidia.custhelp.com/app/answers/detail/a_id/44) oder [mesa] (https: / /www.mesa3d.org/bugs.html)) ihnen helfen das Problem zu lösen. Selten kann es auch etwas bringen das Problem trotzdem den [dxvk Entwickler] (https://github.com/doitsujin/dxvk/issues) zu melden.
+
