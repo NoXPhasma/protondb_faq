@@ -131,9 +131,13 @@ Please read the instructions about those tools on their respective sites.
 
 ## How do I run Windows games I don't own on Steam?
 
-Since the last steam beta, it is now possible to insert a foreign .exe into steam and execute it with proton.
+Add a Non-Steam game to your library (set File Type to "All Files") and select the .exe
 
-But we still recommend [Lutris](https://lutris.net/) for some things, though to run them with Wine. Lutris is a game manager which offers support for a lot of different compatibility layers/emulators, including Wine/Proton.
+Right click the game in your Library and in Properties - Enable "Force the use of a specific Steam Play compatibility Tool"
+
+If there are any spaces in the path to your .exe you will need to fix the "Target:" path in the game's Properties.
+
+However, we do recommend [Lutris](https://lutris.net/) to run most non Steam games through Wine. Lutris is a game manager which offers support for many different compatibility layers/emulators, including Wine/Proton.
 
 ## I have issues with my controller!
 
