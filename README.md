@@ -135,7 +135,7 @@ Add a Non-Steam game to your library (set File Type to "All Files") and select t
 
 Right click the game in your Library and in Properties - Enable "Force the use of a specific Steam Play compatibility Tool"
 
-If there are any spaces in the path to your .exe you will need to fix the "Target:" path in the game's Properties.
+If there are any spaces in the path to your .exe you will need to fix the "Target:" path in the game's Properties and clear the "Set Launch Options"
 
 However, we do recommend [Lutris](https://lutris.net/) to run most non Steam games through Wine. Lutris is a game manager which offers support for many different compatibility layers/emulators, including Wine/Proton.
 
