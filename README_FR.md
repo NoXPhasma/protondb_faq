@@ -13,22 +13,22 @@ Vous pouvez voir qui d'autre a participé sur notre [pqge des contributeurs](htt
 ## Sommaire
 
   - [[ProtonDB] Les boutons "Run" et "Install" ne fonctionnent pas sur Firefox.](#protondb-les-boutons-run-et-install-ne-fonctionnent-pas-sur-firefox)
-  - [[ProtonDB] Le site affiche me dit qu'un jeu est un jeu Windows alors qu'il possède une version Linux, ou vice-versa.](#protondb-at-the-site-my-game-is-displayed-as-a-windows-game-but-it-have-a-native-port-or-the-other-way-round)
+  - [[ProtonDB] Le site affiche me dit qu'un jeu est un jeu Windows alors qu'il possède une version Linux, ou vice-versa.](#protondb-le-site-affiche-me-dit-quun-jeu-est-un-jeu-windows-alors-quil-possède-une-version-linux-ou-vice-versa)
   - [Pourquoi est-ce que mes jeux échouent à se lancer, ont des problèmes de performance ou des bugs d'affichage ?](#pourquoi-est-ce-que-mes-jeux-échouent-à-se-lancer-ont-des-problèmes-de-performance-ou-des-bugs-daffichage-)
   - [Mon jeu quitte subitement après un certain temps, mais fonctionne si esync est désactivé](#mon-jeu-quitte-subitement-après-un-certain-temps-mais-fonctionne-si-esync-est-désactivé)
   - [Les textes dans mon jeu ne s'affichent pas](#les-textes-dans-mon-jeu-ne-saffichent-pas)
   - [Il manque des textures/ennemis dans certains jeux (notamment The Witcher 3)](#il-manque-des-texturesennemis-dans-certains-jeux-notamment-the-witcher-3)
-  - [Pourquoi est-ce que certains jeux "rament" quand j'y joue pour la première fois ?](#Why-do-some-games-stutter-at-the-beginning)
-  - [J'ai des problèmes de son (craquements par exemple)](#i-have-sound-problems-like-crackle-for-example)
-  - [Je veux lancer mes jeux sans DXVK.](#i-want-to-play-a-game-without-dxvk)
-  - [Comment puis-je récupérer le journal d'erreur d'un jeu lancé avec Proton ?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
+  - [Pourquoi est-ce que certains jeux "rament" quand j'y joue pour la première fois ?](#pourquoi-est-ce-que-certains-jeux-rament-quand-jy-joue-pour-la-premi%C3%A8re-fois-)
+  - [J'ai des problèmes de son (craquements par exemple)](#jai-des-probl%C3%A8mes-de-son-craquements-par-exemple)
+  - [Je veux lancer mes jeux sans DXVK.](#je-veux-lancer-mes-jeux-sans-dxvk)
+  - [Comment puis-je récupérer le journal d'erreur d'un jeu lancé avec Proton ?](#comment-puis-je-r%C3%A9cup%C3%A9rer-le-journal-derreur-dun-jeu-lanc%C3%A9-avec-proton-)
   - [Certains reports mentionnent avoir fait fonctionner le jeu en installant un composant additionnel. Comment puis-je faire cela ?](#certains-reports-mentionnent-avoir-fait-fonctionner-le-jeu-en-installant-un-composant-additionnel-comment-puis-je-faire-cela-)
   - [Comment puis-je jouer à des jeux Windows que je ne possède pas sur Steam ?](#comment-puis-je-jouer-à-des-jeux-windows-que-je-ne-possède-pas-sur-steam-)
-  - [Mon contrôleur de jeu ne fonctionne pas correctement](#i-have-issues-with-my-controller)
+  - [Mon contrôleur de jeu ne fonctionne pas correctement](#mon-contr%C3%B4leur-de-jeu-ne-fonctionne-pas-correctement)
   - [Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.](#les-jeux-stockés-sur-ma-partition-windows-ntfs-ne-se-lancent-pas)
-  - [Punkbuster, Rockstar Social Club etc... échouent à s'installer.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
-  - [Les sauvegardes de mon jeu ne fonctionne pas, ou bien le jeu plante lorsque je crée ou charge une sauvegarde.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
-  - [Parfois, mon ordinateur se fige totalement lorsque je joue.](#my-entire-computer-hangs-up-at-some-point-in-the-game)
+  - [Punkbuster, Rockstar Social Club etc... échouent à s'installer.](#punkbuster-rockstar-social-club-etc-%C3%A9chouent-%C3%A0-sinstaller)
+  - [Les sauvegardes de mon jeu ne fonctionne pas, ou bien le jeu plante lorsque je crée ou charge une sauvegarde.](#les-sauvegardes-de-mon-jeu-ne-fonctionne-pas-ou-bien-le-jeu-plante-lorsque-je-cr%C3%A9e-ou-charge-une-sauvegarde)
+  - [Parfois, mon ordinateur se fige totalement lorsque je joue.](#parfois-mon-ordinateur-se-fige-totalement-lorsque-je-joue)
 
 ## [ProtonDB] Les boutons "Run" et "Install" ne fonctionnent pas sur Firefox.
 Si Firefox ne vous a pas demandé comment gérer les URLs de type `steam://` URLS, vous devez le lui spécifier manuellement. Pour cela, ouvrez la page `about:config`, faites un clic droit n'importe où dans la liste et sélectionnez `New (Nouveau)` » `Boolean (Booléen)`. Entrez le nom `network.protocol-handler.expose.steam` et la valeur `false`. À présent, si vous cliquez sur une URL de type `steam://`, Firefox vous demandera l'action à effectuer.
@@ -146,7 +146,7 @@ Cas #2: Mon Steam-Controller n'est pas reconnu, même dans les jeux natifs. Seul
 
 (Note : ce bug semble n'affecter que Gentoo et ses distributions dérivées)
 
-Solution : Utiliser [sc-controller)](https://github.com/kozec/sc-controller).
+Solution : Utiliser [sc-controller](https://github.com/kozec/sc-controller).
 
 ## Les jeux stockés sur ma partition Windows (NTFS) ne se lancent pas.
 
