@@ -62,7 +62,7 @@ Pour changer de version de Proton, allez dans les options de Steam puis dans l'o
 
 ## Il manque des textures/ennemis dans certains jeux (notamment The Witcher 3)
 
-Ce problème est résolu depuis la version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) de DXVK et la version 1.1.88 de Vulkan. Malheureusement, à l'heure où ces lignes sont écrites, il vous faudra aussi les pilotes bêta de Nvidia (396.54.09), ou la version 18.3 (ou supérieure) de Mesa pour AMD.
+Ce problème est résolu depuis la version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) de DXVK et la version 1.1.88 de Vulkan. Si vous avez une carte Nvidia, il vous faut la version 415.22 du pilote au minimum. Pour AMD, il vous faut au moins la version 18.3 de Mesa.
 
 ## Pourquoi est-ce que certains jeux "rament" quand j'y joue pour la première fois ?
 
