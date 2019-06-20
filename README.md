@@ -148,7 +148,7 @@ Case #1: My controller gets recognized as player 1 & player 2 in lego games.
 
 Case #2: My Steam-Controller is not recognized even with native games, only the mouse functions.
 
-- Fix #2: This is [@Alexander](https://github.com/Alexander88207) so far only noticed by gentoo itself and distros based on it.
+- Fix #2: This happens on distros based on gentoo or gentoo itself. Noticed by [@Alexander](https://github.com/Alexander88207)
 
 If you game on Linux using steam and have a steam controller you may have noticed something interesting. The steam controller appears to be working, but doesn't work in games or is not displayed under wine control.
 
