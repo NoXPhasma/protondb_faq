@@ -40,7 +40,7 @@ Jika Firefox tidak meminta Anda bagaimana seharusnya berproses dengan `steam://`
 
 ## [ProtonDB] Di dalam website game saya ditampilkan sebagai game Windows tetapi ia punya native port, atau sebaliknya.
 
-ProtonDB mendapatkan data dari SteamDB dan ini langsung dari developer game yang bersangkutan. Jadi apabila developer memiliki native port seperti misalnya RUST lalu ditutup kembali, maka game tersebut akan ditampilkan sebagai game Windows, tetapi pembeli pada saat ada native port akan tetap memiliki native port tentu saja, sehingga akan ada pengguna yang menuliskan: "itu punya native port!".
+ProtonDB mendapatkan data dari SteamDB dan ini langsung dari developer game yang bersangkutan. Jadi apabila developer memiliki native port seperti misalnya Rust lalu ditutup kembali, maka game tersebut akan ditampilkan sebagai game Windows, tetapi pembeli pada saat ada native port akan tetap memiliki native port tentu saja, sehingga akan ada pengguna yang menuliskan: "itu punya native port!".
 
 ## Mengapa game saya crash saat dijalankan, berjalan sangat lambat atau memiliki masalah rendering?
 
