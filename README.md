@@ -34,12 +34,13 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
   - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
   - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
+  
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
-If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
+If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Boolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 
 ## [ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
 
-ProtonDB obtains the data from SteamDB and these in turn from the developers of the respective game. So if the developers had a native port like for example at rust and it was closed then the game will be shown as a windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
+ProtonDB obtains the data from SteamDB and these in turn from the developers of the respective game. So if the developers had a native port like for example at Rust and it was closed then the game will be shown as a Windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
 
 ## Why do my games crash on start, run very slow or have rendering issues?
 
@@ -160,9 +161,9 @@ By default Linux mounts NFTS partitions only writeable by Root. It is necessary 
 
 ## Punkbuster, Rockstar Social Club etc... fail during initial installation.
 
-It can happen that such things are not installed correctly the [first time](https://github.com/NoXPhasma/protondb_faq/raw/master/Initial%20installation%20example.png) and then steam does not try to install them anymore. 
+It can happen that such things are not installed correctly the [first time](https://github.com/NoXPhasma/protondb_faq/raw/master/Initial%20installation%20example.png) and then Steam does not try to install them anymore. 
 
-Each game has a folder in the game folder which for example are called so: "Installers" "Redist" and so on...... These folders contain the installation program for PB or RGSC, these must be started in the corresponding game prefix with wine, here an example: 
+Each game has a folder in the game folder which for example are called so: "Installers" "Redist" and so on...... These folders contain the installation program for PB or RGSC, these must be started in the corresponding game prefix with Wine, here an example: 
 
 `WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
@@ -172,6 +173,6 @@ You can try to start the game with this [launchparameter](https://support.steamp
 
 ## My entire computer hangs up at some point in the game.
 
-This could be a GPU hang but to be sure that this is not proton's fault test the game in the latest wine version first.
+This could be a GPU hang but to be sure that this is not Proton's fault test the game in the latest Wine version first.
 
 if this also happens in the latest wine version, only the developers of your graphics driver ([nvidia](https://nvidia.custhelp.com/app/answers/detail/a_id/44) or [mesa](https://www.mesa3d.org/bugs.html)) or rarely [dxvk](https://github.com/doitsujin/dxvk/issues) can help you.
