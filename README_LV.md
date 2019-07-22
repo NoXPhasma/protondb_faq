@@ -10,7 +10,7 @@
 -  [Latvian](README_LV.md) (Translated by [HolimaX](https://github.com/HolimaX))
 -  [Russian](README_RU.md) (Still needs to be translated by someone)
 
-Lai redzētu citus, kuri palīdzēja, skatiet mūsu [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) graph!
+Lai redzētu citus, kuri palīdzēja, skatiet mūsu [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) grafiku!
 
 ## Ievads
 Ar šo BUJ, mēs vēlamies pārklāt svarigakos jautājumus, saistībā ar ProtonDB lietošanu un, protams, tehniskajiem jautājumiem, kuri parādās ļoti bieži Discord. Ja Jūs velaties piedālīties vai ietekt, neliedzieties kontaktēties ar mums caur [Discord](https://discord.gg/uuwK9EV), vai sūtiet mums problēmas vai Pull requests.
@@ -38,7 +38,7 @@ Ar šo BUJ, mēs vēlamies pārklāt svarigakos jautājumus, saistībā ar Proto
 ## [ProtonDB] "Run" and "Install" pogas nestrādā Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 
-## [ProtonDB] Mājaslapā mana spēle ir attēlota kā Windows spēle, bet tai ir sākotnejā Linux versija vai citādāks pamatform āts.
+## [ProtonDB] Mājaslapā mana spēle ir attēlota kā Windows spēle, bet tai ir sākotnejā Linux versija vai citādāks pamatformāts.
 
 ProtonDB obtains the data from SteamDB and these in turn from the developers of the respective game. So if the developers had a native port like for example at rust and it was closed then the game will be shown as a windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
 
@@ -48,23 +48,23 @@ ProtonDB obtains the data from SteamDB and these in turn from the developers of 
 
 #### Aplūkojiet [WineHQ](https://appdb.winehq.org), kur jūs varētu atrast papildus informāciju. Ja mājaslapa rāda korektu darbību ar Wine, tā varētu būt Proton specifiska problēma vai varbūt 3-šas puses DRM kā "Denuvo" rada problēmas.
 
-#### Esiet dross, ka palaižāt Steam ar Steam Runtime libraries:
+#### Esiet dross, ka palaižāt Steam ar Steam Runtime bibliotēkām:
 
 - Arch: Use Steam (Runtime)
 
 - Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
-## Mana spēle darbojas labi bet pēc kāda laika ir kļuda ar esync
+## Mana spēle darbojas labi, bet pēc kāda laika ir kļūda ar esync
 
 Most issues with esync are related to the limited amount of opened files. Before reporting issues with esync, check if the command `ulimit -Hn` reports much more than 4096. If not, you can follow [these instructions](https://github.com/zfigura/wine/blob/esync/README.esync) to raise the limit.
 
-## Spēle nerāda tekstu
+## Spēles nerāda tekstu
 
 Some games need Windows fonts to be installed. Since Proton version [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) this will be done for you automatically. If you are using Proton 3.7, see if switching to version 3.16-4 or higher fixes your problem.
 
 To change the Proton version, go to the Steam settings and then to the tab Steam Play. You need to activate the option "Use this tool instead of game-specific selections from Steam". Then you can chose the Proton version in the drop down menu.
 
-## Dažām spēlēk kā Witcher 3 ir iztrūkstošas tekstūru/ienaidnieki
+## Dažām spēlēn, kā piemēram Witcher 3, ir iztrūkstošas tekstūras/ienaidnieki
 
 This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Nvidia users need at least driver version 415.22, and AMD users need at least Mesa version 18.3.
 
@@ -84,7 +84,7 @@ it is sufficient to set "xaudio2_7.dll" to native, built-in in winecfg or instal
 
 [Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
 
-## Es gribu spelēt spēli bez DXVK.
+## Es gribu spēlēt spēli bez DXVK.
 
 If you really want to try to play your game without DXVK, then try to start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
 ```
@@ -155,7 +155,7 @@ If you game on Linux using steam and have a steam controller you may have notice
 
 We recommend to use the tool [sc-controller)](https://github.com/kozec/sc-controller) to workaround this issue.
 
-## Spēles, saglabatas Windows partīcijā, (NTFS) nepalaižāš
+## Spēles, saglabātas Windows partīcijā, (NTFS) nepalaižās
 
 By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple tutorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
 
