@@ -1,41 +1,41 @@
 ![](https://github.com/NoXPhasma/protondb_faq/raw/master/logo.png)
 
 ## Valodas
--  [English](#table-of-content) (Written by [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
--  [German](README_DE.md) (Translated by [Alexander](https://github.com/Alexander88207))
--  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
--  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
--  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
--  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
--  [Latvian](README_LV.md) (Translated by [HolimaX](https://github.com/HolimaX))
--  [Russian](README_RU.md) (Still needs to be translated by someone)
+-  [English](#table-of-content) (Uzrakstījuši [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
+-  [German](README_DE.md) (Iztulkojis [Alexander](https://github.com/Alexander88207))
+-  [Spanish](README_ESP.md) (Iztulkojis [Willdrick](https://github.com/Willdrick))
+-  [French](README_FR.md) (Iztulkojis [Askannz](https://github.com/Askannz))
+-  [Italian](README_IT.md) (Iztulkojis [Bloodis](https://github.com/bloodis))
+-  [Norwegian](README_NO.md) (Iztulkojis [MagZu](https://github.com/magzu))
+-  [Latvian](README_LV.md) (Iztulkojis [HolimaX](https://github.com/HolimaX))
+-  [Russian](README_RU.md) (Vēl ar vien kādam ir jāpārtulko)
 
 Lai redzētu citus, kuri palīdzēja, skatiet mūsu [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) grafiku!
 
 ## Ievads
-Ar šo BUJ, mēs vēlamies pārklāt svarigakos jautājumus, saistībā ar ProtonDB lietošanu un, protams, tehniskajiem jautājumiem, kuri parādās ļoti bieži Discord. Ja Jūs velaties piedālīties vai ietekt, neliedzieties kontaktēties ar mums caur [Discord](https://discord.gg/uuwK9EV), vai sūtiet mums problēmas vai Pull requests.
+Ar šo BUJ, mēs vēlamies pārklāt svarigakos jautājumus, saistībā ar ProtonDB lietošanu un, protams, tehniskajiem jautājumiem, kuri parādās ļoti bieži Discord. Ja Jūs velaties piedālīties vai ietekt, neliedzieties kontaktēties ar mums caur [Discord](https://discord.gg/uuwK9EV), vai sūtiet mums problēmas vai Pull pieprasījumus.
 
 
 ## Satura Rādītājs
-  - [[ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
-  - [[ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
+  - [[ProtonDB] "Run" un "Install" pogas nestrādā Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
+  - [[ProtonDB] Mājaslapā mana spēle ir attēlota kā Windows spēle, bet tai ir sākotnejā Linux versija vai citādāks pamatformāts.
 ](#protondb-at-the-site-my-game-is-displayed-as-a-windows-game-but-it-have-a-native-port-or-the-other-way-round)
-  - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
-  - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
-  - [The game doesn't show any text](#the-game-doesnt-show-any-text)
-  - [Some games like Witcher 3 have missing textures/enemies](#some-games-like-witcher-3-have-missing-texturesenemies)
-  - [Why do some games stutter at the beginning?](#Why-do-some-games-stutter-at-the-beginning)
-  - [I have sound problems like crackle for example](#i-have-sound-problems-like-crackle-for-example)
-  - [I want to play a game without DXVK](#i-want-to-play-a-game-without-dxvk)
-  - [How do I create logs of a game I run with Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
-  - [Some reports say they made the game running by installing some software, how do I do that?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
-  - [How do I run Windows games I don't own on Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
-  - [I have issues with my controller!](#i-have-issues-with-my-controller)
-  - [Games stored on my Windows partition (NTFS) won't start](#games-stored-on-my-windows-partition-ntfs-wont-start)
-  - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
-  - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
-  - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
-## [ProtonDB] "Run" and "Install" pogas nestrādā Firefox.
+  - [Kāpēc spēles nestrādā, strādā lēnām vai ir ar grafiskām problēmām?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
+  - [Mana spēle darbojas labi, bet pēc kāda laika ir kļūda ar esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
+  - [Spēles nerāda tekstu](#the-game-doesnt-show-any-text)
+  - [Dažām spēlēm, kā piemēram Witcher 3, ir iztrūkstošas tekstūras/ienaidnieki](#some-games-like-witcher-3-have-missing-texturesenemies)
+  - [Kāpēc dažas spēlēs ķerās pie palaisšanas?](#Why-do-some-games-stutter-at-the-beginning)
+  - [Man ir skaņas problēmas - piemēram, krakšķēšana](#i-have-sound-problems-like-crackle-for-example)
+  - [Es gribu spēlēt spēli bez DXVK.](#i-want-to-play-a-game-without-dxvk)
+  - [Kā es varu izveidot reģistrus spēlei, kuru palaižu ar Proton?](#how-do-i-create-logs-of-a-game-i-run-with-proton)
+  - [Daži ziņojumi saka, ka spēle ir palaista, uzstādot papildus programmatūru. Kā es to varu izdarīt?](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that)
+  - [Kā es palaižu Windows spēles, kuras man nepieder iekš Steam?](#how-do-i-run-windows-games-i-dont-own-on-steam)
+  - [Man ir problēmas ar manu kontrolieri!](#i-have-issues-with-my-controller)
+  - [Spēles, saglabātas Windows partīcijā, (NTFS) nepalaižās](#games-stored-on-my-windows-partition-ntfs-wont-start)
+  - [Punkbuster, Rockstar Social Club un citi ... izgāžas pie sākotnējās uzstādīšanas.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
+  - [Mana spēle neko nesaglabā vai ir kļūda spēles saglabāšanas laikā.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
+  - [Viss mans dators uzkaras kāda brīdī spēlē](#my-entire-computer-hangs-up-at-some-point-in-the-game)
+## [ProtonDB] "Run" un "Install" pogas nestrādā Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 
 ## [ProtonDB] Mājaslapā mana spēle ir attēlota kā Windows spēle, bet tai ir sākotnejā Linux versija vai citādāks pamatformāts.
@@ -64,7 +64,7 @@ Some games need Windows fonts to be installed. Since Proton version [3.16-4](htt
 
 To change the Proton version, go to the Steam settings and then to the tab Steam Play. You need to activate the option "Use this tool instead of game-specific selections from Steam". Then you can chose the Proton version in the drop down menu.
 
-## Dažām spēlēn, kā piemēram Witcher 3, ir iztrūkstošas tekstūras/ienaidnieki
+## Dažām spēlēm, kā piemēram Witcher 3, ir iztrūkstošas tekstūras/ienaidnieki
 
 This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Nvidia users need at least driver version 415.22, and AMD users need at least Mesa version 18.3.
 
@@ -93,7 +93,7 @@ PROTON_USE_WINED3D11=1 %command%
 Note: You will have maybe graphical error's or poor performance depending on the game.
 
 If your game doesn't start or crash then your game cannot be run with wine3d11
-## Kā es vari izveidot reģistrus spēlei, kuru palaižu ar Proton?
+## Kā es varu izveidot reģistrus spēlei, kuru palaižu ar Proton?
 
 Proton will create a log file for a particular game, if you [set the launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) to:
 ```
