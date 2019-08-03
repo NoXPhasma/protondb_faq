@@ -35,7 +35,7 @@ Ar šo BUJ, mēs vēlamies pārklāt svarigakos jautājumus, saistībā ar Proto
   - [Punkbuster, Rockstar Social Club etc... fail during initial installation.](#punkbuster-rockstar-social-club-etc-fail-during-initial-installation)
   - [My Game won't save anything or crash while creating/loading a save.](#my-game-wont-save-anything-or-crash-while-creatingloading-a-save)
   - [My entire computer hangs up at some point in the game](#my-entire-computer-hangs-up-at-some-point-in-the-game)
-## [ProtonDB] "Run" and "Install" pogas nestrādā Firefox.
+## [ProtonDB] "Run" un "Install" pogas nestrādā Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Bolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 
 ## [ProtonDB] Mājaslapā mana spēle ir attēlota kā Windows spēle, bet tai ir sākotnejā Linux versija vai citādāks pamatformāts.
