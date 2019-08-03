@@ -1,13 +1,13 @@
 ![](https://github.com/NoXPhasma/protondb_faq/raw/master/logo.png)
 
 ## Valodas
--  [English](#table-of-content) (Written by [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
--  [German](README_DE.md) (Translated by [Alexander](https://github.com/Alexander88207))
--  [Spanish](README_ESP.md) (Translated by [Willdrick](https://github.com/Willdrick))
--  [French](README_FR.md) (Translated by [Askannz](https://github.com/Askannz))
--  [Italian](README_IT.md) (Translated by [Bloodis](https://github.com/bloodis))
--  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
--  [Latvian](README_LV.md) (Translated by [HolimaX](https://github.com/HolimaX))
+-  [English](#table-of-content) (Uzrakstījuši [NoXPhasma](https://github.com/NoXPhasma) & [Alexander](https://github.com/Alexander88207))
+-  [German](README_DE.md) (Iztulkojis [Alexander](https://github.com/Alexander88207))
+-  [Spanish](README_ESP.md) (Iztulkojis [Willdrick](https://github.com/Willdrick))
+-  [French](README_FR.md) (Iztulkojis [Askannz](https://github.com/Askannz))
+-  [Italian](README_IT.md) (Iztulkojis [Bloodis](https://github.com/bloodis))
+-  [Norwegian](README_NO.md) (Iztulkojis [MagZu](https://github.com/magzu))
+-  [Latvian](README_LV.md) (Iztulkojis [HolimaX](https://github.com/HolimaX))
 -  [Russian](README_RU.md) (Vēl ar vien kādam ir jāpārtulko)
 
 Lai redzētu citus, kuri palīdzēja, skatiet mūsu [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) grafiku!
