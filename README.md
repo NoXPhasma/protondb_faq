@@ -9,6 +9,7 @@
 -  [Norwegian](README_NO.md) (Translated by [MagZu](https://github.com/magzu))
 -  [Latvian](README_LV.md) (Translated by [HolimaX](https://github.com/HolimaX))
 -  [Indonesian](README_ID.md) (Translated by [Ari-El-Uno](https://github.com/Ari-El-Uno))
+-  [Swedish](README_SE.md) (Translated by [Kattus](https://github.com/Kattus))
 -  [Russian](README_RU.md) (Still needs to be translated by someone)
 
 To see who else was helping, see our [contributors](https://github.com/NoXPhasma/protondb_faq/graphs/contributors) graph!
