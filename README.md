@@ -47,7 +47,7 @@ ProtonDB obtains the data from SteamDB, and these in turn are set by the develop
 
 ## Why do my games crash on startup, run very slowly or have rendering issues?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. Generally, for AMD and Intel, you should have be using a recent version of Mesa (19+) if you're on AMD or Intel, and Nvidia users should insteall the proprietary drivers from Nvidia's site:  You will find more detailed information about how to update your graphic drivers on our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. Generally, for AMD and Intel, you should be using a recent version of Mesa (19+ is a good idea), and Nvidia users should install the proprietary drivers from Nvidia's website:  You will find more detailed information about how to update your graphic drivers on our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 
 #### Search for your game on [WineHQ](https://appdb.winehq.org), and you might find workarounds to make it run. If the site reports that it runs with Wine, it could be a Proton specific issue, or possibly a 3rd party service that is stopping the game from running (such as older versions of "Denuvo DRM" or Anti Cheats like "EAC" or "BattlEye").
 
