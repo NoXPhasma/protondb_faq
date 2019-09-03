@@ -41,15 +41,15 @@ With this FAQ, we want to cover the most important questions related to the usag
 ## [ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.
 If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need to force Firefox to do so. For that open `about:config` in your Firefox, right click anywhere in the list and select `New` » `Boolean`. Enter `network.protocol-handler.expose.steam` as the name for the new entry, and `false` as the value. Now if you click on a `steam://` URL, Firefox should ask you how to proceed.
 
-## [ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
+## [ProtonDB] On Steam my game is displayed as a windows game, but it has had a native port before!
 
-ProtonDB obtains the data from SteamDB and these in turn from the developers of the respective game. So if the developers had a native port like for example at Rust and it was closed then the game will be shown as a Windows game but buyers at the time of the native port will keep the native port of course so there will be some users who write: "it have a native port!".
+ProtonDB obtains the data from SteamDB, and these in turn are set by the developers of the respective game you want to play. So if the developers had a native port like, for example; Rust, and it was closed, then the game will be shown as a Windows game, but buyers who purchased the native port will keep said port as an option in their Steam library, so there will be some users who write: "it has a native port!", when that sometimes is no longer the case.
 
-## Why do my games crash on start, run very slow or have rendering issues?
+## Why do my games crash on startup, run very slowly or have rendering issues?
 
-#### Be sure that your system is up-to-date and that you are using the latest drivers available your graphics card. You will find detailed informations about how to update your graphic drivers in our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
+#### Be sure that your system is up-to-date and that you are using the latest drivers available for your graphics card. Generally, for AMD and Intel, you should have be using a recent version of Mesa (19+) if you're on AMD or Intel, and Nvidia users should insteall the proprietary drivers from Nvidia's site:  You will find more detailed information about how to update your graphic drivers on our [Wiki](https://github.com/NoXPhasma/protondb_faq/wiki/Graphics-driver-installation)
 
-#### Take a look at the site for your game on [WineHQ](https://appdb.winehq.org), you might find workarounds to make it run. If the site reports that it runs with Wine it could be a Proton specific issue or maybe a 3rd party DRM like "Denuvo" is making trouble here.
+#### Search for your game on [WineHQ](https://appdb.winehq.org), and you might find workarounds to make it run. If the site reports that it runs with Wine, it could be a Proton specific issue, or possibly a 3rd party service that is stopping the game from running (such as older versions of "Denuvo DRM" or Anti Cheats like "EAC" or "BattlEye").
 
 #### Be sure that you run Steam with Steam Runtime libraries:
 
@@ -57,19 +57,19 @@ ProtonDB obtains the data from SteamDB and these in turn from the developers of 
 
 - Solus: Disable the native-runtime in their "[linux-steam-integration-tool](https://raw.githubusercontent.com/solus-project/linux-steam-integration/master/.github/LSI_Settings.png)"
 
-## My game crashes after a while but works fine without esync
+## My game crashes after a while but works fine without esync:
 
 Most issues with esync are related to the limited amount of opened files. Before reporting issues with esync, check if the command `ulimit -Hn` reports much more than 4096. If not, you can follow [these instructions](https://github.com/zfigura/wine/blob/esync/README.esync) to raise the limit.
 
-## The game doesn't show any text
+## The game doesn't show any text!
 
-Some games need Windows fonts to be installed. Since Proton version [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) this will be done for you automatically. If you are using Proton 3.7, see if switching to version 3.16-4 or higher fixes your problem.
+Some games need Windows core fonts to be installed. Since Proton version [3.16-4](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-4) this will be done for you automatically, so you needn't worry. However, if you are using Proton 3.7, see if switching to version 3.16-4 or higher fixes this problem.
 
-To change the Proton version, go to the Steam settings and then to the tab Steam Play. You need to activate the option "Use this tool instead of game-specific selections from Steam". Then you can chose the Proton version in the drop down menu.
+To change the Proton version per-game, go to the properties for your game (right click your game -> properties), and then go the tab "Steam Play". You need to activate the option "Force the use of a specific Steam Play Tool". Then you can choose the Proton version in the drop down menu.
 
-## Some games like Witcher 3 have missing textures/enemies
+## Some games like The Witcher 3 have missing textures/enemies:
 
-This is fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Nvidia users need at least driver version 415.22, and AMD users need at least Mesa version 18.3.
+This has been fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/releases/tag/v0.90) and Vulkan 1.1.88. Nvidia users need at least driver version 415.22, and AMD users need at least Mesa version 18.3.
 
 ## Why do some games stutter at the beginning?
 
@@ -77,25 +77,26 @@ This is quite normal. Because at the beginning the shaders have to be loaded fir
 
 Note that the dxvk cache is not related to the "Shader Pre-Caching" by Steam.
 
-## I have sound problems like crackle for example
+## I have sound problems, such as crackling audio:
 
-In most cases, it helps to install xaudio2 (xact) but in cases such as Skyrim, for example, it can also solve a problem for some but can also cause a new sound problem, but it is always worth a try.
+Since proton version [3.16-5](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-5) proton comes with FAudio, an Xaudio replacement that solves many issues with Xaudio that Wine brings up, so you don't have to install anything unless you're using an older version of proton, then read on:
 
-Since proton version [3.16-5](https://github.com/ValveSoftware/Proton/wiki/Changelog#316-5) you don't have to do anything unless you're using an older version of proton then read on here:
+In some cases, it helps to install xaudio2 (xact), but in cases such as Skyrim, for example, it can also solve one problem for some, but can also cause a new sound problem, but it is always worth a try.
 
 it is sufficient to set "xaudio2_7.dll" to native, built-in in winecfg or installing xact with winetricks.
 
 [Here](#some-reports-say-they-made-the-game-running-by-installing-some-software-how-do-i-do-that) you will find more information on how to install additional programs in your gameprefix.
 
-## I want to play a game without DXVK.
+## I want to play a game without DXVK:
 
-If you really want to try to play your game without DXVK, then try to start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
+We would **strongly** advise against this, but if you really want to try to play your game without DXVK (such as for debugging purposes), then start the game with the following [launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947)
 ```
 PROTON_USE_WINED3D11=1 %command%
 ```
-Note: You will have maybe graphical error's or poor performance depending on the game.
+Note: There's a good chance graphical errors will occur in-game, or you may suffer worse performance (or both, don't say we didn't warn you!)
 
-If your game doesn't start or crash then your game cannot be run with wine3d11
+If your game doesn't start or crash, then your game cannot be run with wined3d11
+
 ## How do I create logs of a game I run with Proton?
 
 Proton will create a log file for a particular game, if you [set the launch parameter](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) to:
@@ -158,9 +159,9 @@ If you game on Linux using steam and have a steam controller you may have notice
 
 We recommend to use the tool [sc-controller)](https://github.com/kozec/sc-controller) to workaround this issue.
 
-## Games stored on my Windows partition (NTFS) won't start
+## Games stored on my Windows partition (NTFS) won't start:
 
-By default Linux mounts NFTS partitions only writeable by Root. It is necessary to mount that partition with user rights. You will find a simple tutorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
+By default, Linux mounts NTFS partitions as only writeable by the Root user. It is necessary to mount that partition with user rights instead. You will find a simple tutorial on how to mount a NTFS drive with user rights on the [Proton Wiki](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows).
 
 ## Punkbuster, Rockstar Social Club etc... fail during initial installation.
 
