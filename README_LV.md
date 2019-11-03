@@ -127,7 +127,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 ##
 #### Rīku lietošana
 
-The two most popular currently are [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
+The two most popular currently are [Protontricks](https://github.com/Matoking/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Please read the instructions about those tools on their respective sites.
 

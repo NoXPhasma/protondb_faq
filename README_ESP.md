@@ -113,7 +113,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 ##
 #### Usando Herramientas específicas para Proton
 
-En este momento las más populares son [Protontricks](https://github.com/Sirmentio/protontricks) y [ProtonFixes](https://github.com/simons-public/protonfixes).
+En este momento las más populares son [Protontricks](https://github.com/Matoking/protontricks) y [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Puedes obtener instrucciones e información de ellas, en sus respectivos sitios web.
 

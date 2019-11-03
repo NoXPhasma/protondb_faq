@@ -14,19 +14,29 @@ Mit dieser FAQ wollen wir die wichtigsten Fragen im Zusammenhang mit der Verwend
 
 ## Inhaltsverzeichnis
 
-- [[[ProtonDB] Die Buttons "Run " und "Install " scheinen nicht auf Firefox zu funktionieren](#protondb-die-buttons-run-und--install-scheinen-im-firefox-nicht-zu-funktionieren)
-- [Warum läuft mein Spiel so langsam, hat grafische Fehler oder startet erst gar nicht?](#warum-läuft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
-- [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esyc!](#mein-spiel-stürzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
+- [Sprachen](#sprachen)
+- [Einführung](#einf%c3%bchrung)
+- [Inhaltsverzeichnis](#inhaltsverzeichnis)
+- [[ProtonDB] Die Buttons "Run" und "Install" scheinen im Firefox nicht zu funktionieren](#protondb-die-buttons-%22run%22-und-%22install%22-scheinen-im-firefox-nicht-zu-funktionieren)
+- [Warum läuft mein Spiel so langsam, hat Grafische Fehler oder startet erst gar nicht?](#warum-l%c3%a4uft-mein-spiel-so-langsam-hat-grafische-fehler-oder-startet-erst-gar-nicht)
+    - [Überprüfen sie ihre Grafikkartentreiber ob sie auf den aktuellsten stand sind. Detaillierte Informationen dazu finden Sie in unserem Wiki](#%c3%9cberpr%c3%bcfen-sie-ihre-grafikkartentreiber-ob-sie-auf-den-aktuellsten-stand-sind-detaillierte-informationen-dazu-finden-sie-in-unserem-wiki)
+    - [Werfen Sie auf jeden Fall einen Blick auf die Website WineHQ von ihren Spiel, um Workarounds zu finden, damit ihr spiel läuft. Wenn die Seite meldet, dass es mit Wine läuft, könnte es sich um ein Proton-spezifisches Problem handeln, oder vielleicht macht ein Drittanbieter-DRM wie zum Beispiel "Denuvo " Probleme.](#werfen-sie-auf-jeden-fall-einen-blick-auf-die-website-winehq-von-ihren-spiel-um-workarounds-zu-finden-damit-ihr-spiel-l%c3%a4uft-wenn-die-seite-meldet-dass-es-mit-wine-l%c3%a4uft-k%c3%b6nnte-es-sich-um-ein-proton-spezifisches-problem-handeln-oder-vielleicht-macht-ein-drittanbieter-drm-wie-zum-beispiel-%22denuvo-%22-probleme)
+    - [Seien sie sich sicher das sie Steam mit den Steam eigenen Laufzeitbibliotheken verwenden.](#seien-sie-sich-sicher-das-sie-steam-mit-den-steam-eigenen-laufzeitbibliotheken-verwenden)
+- [Mein Spiel stürzt nach einiger Zeit ab. Dies passiert aber nicht ohne Esync!](#mein-spiel-st%c3%bcrzt-nach-einiger-zeit-ab-dies-passiert-aber-nicht-ohne-esync)
 - [Mein Spiel zeigt gar keinen Text an](#mein-spiel-zeigt-gar-keinen-text-an)
 - [Einige Spiele wie Witcher 3 haben fehlende Texturen oder unsichtbare Feinde](#einige-spiele-wie-witcher-3-haben-fehlende-texturen-oder-unsichtbare-feinde)
 - [Warum ruckeln manche spiele schwer am anfang?](#warum-ruckeln-manche-spiele-schwer-am-anfang)
-- [Mein Spiel hat Probleme mit den Ton zum Beispiel: fürchterliches Knacken, Knistern etc...](#mein-spiel-hat-probleme-mit-den-ton-zum-beispiel-fürchterliches-knacken-knistern-etc)
-- [Wie erstelle ich Protokolle eines Spiels, das ich mit Proton ausführe?](#wie-erstelle-ich-protokolle-eines-spiels-das-ich-mit-proton-ausführe)
-- [Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zusätzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
-- [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-führe-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
-- [Ich habe Probleme mit meinen Controller!](ich-habe-probleme-mit-meinen-controller)
+- [Mein Spiel hat Probleme mit den Ton zum Beispiel: fürchterliches Knacken, Knistern etc...](#mein-spiel-hat-probleme-mit-den-ton-zum-beispiel-f%c3%bcrchterliches-knacken-knistern-etc)
+- [Wie erstelle ich Protokolle eines Spiels, das ich mit Proton ausführe?](#wie-erstelle-ich-protokolle-eines-spiels-das-ich-mit-proton-ausf%c3%bchre)
+- [Einige Berichte sagen, dass sie das Spiel mit der Installation von zusätzlicher Software zum laufen gebracht haben, wie kann ich das tun?](#einige-berichte-sagen-dass-sie-das-spiel-mit-der-installation-von-zus%c3%a4tzlicher-software-zum-laufen-gebracht-haben-wie-kann-ich-das-tun)
+    - [Einsatz von Winetricks](#einsatz-von-winetricks)
+    - [Einsatz von speziellen Tools](#einsatz-von-speziellen-tools)
+- [Wie führe ich Windows-Spiele aus, die ich nicht auf Steam besitze?](#wie-f%c3%bchre-ich-windows-spiele-aus-die-ich-nicht-auf-steam-besitze)
+- [Ich habe Probleme mit meinen Controller!](#ich-habe-probleme-mit-meinen-controller)
 - [Spiele, die auf meiner Windows-Partition (NTFS) gespeichert sind, starten nicht!](#spiele-die-auf-meiner-windows-partition-ntfs-gespeichert-sind-starten-nicht)
 - [Punkbuster, Rockstar Social Club etc.... scheitern bei der Erstinstallation.](#punkbuster-rockstar-social-club-etc-scheitern-bei-der-erstinstallation)
+- [Mein Spiel speichert nichts oder stürzt beim laden eines Spielstandes ab.](#mein-spiel-speichert-nichts-oder-st%c3%bcrzt-beim-laden-eines-spielstandes-ab)
+- [Mein ganzes System hängt sich am einer gewissen Stelle im Spiel auf.](#mein-ganzes-system-h%c3%a4ngt-sich-am-einer-gewissen-stelle-im-spiel-auf)
 
 ## [ProtonDB] Die Buttons "Run" und  "Install" scheinen im Firefox nicht zu funktionieren
 Falls Firefox Sie nicht fragt, wie es mit `steam://` URLs umgehen soll, können Sie Firefox dazu zwingen. Dafür öffnen Sie `about:config` im Firefox, rechtsklick in der Liste und im Menü wählen Sie `Neu` » `Bolean`. Als Name für den neuen Eintrag geben Sie `network.protocol-handler.expose.steam` an und als Wert `false`. Nun sollte Firefox beim nächsten Aufruf einer `steam://` URL fragen wie er damit umgehen soll.
@@ -106,7 +116,7 @@ WINEPREFIX=/home/alexander/.steam/steamapps/compatdata/4000/pfx/winetricks
 ##
 #### Einsatz von speziellen Tools
 
-Die beiden beliebtesten sind derzeit [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
+Die beiden beliebtesten sind derzeit [Protontricks](https://github.com/Matoking/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Bitte lesen Sie die Anweisungen zu diesen Tools auf ihren jeweiligen Seiten.
 

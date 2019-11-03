@@ -20,23 +20,28 @@ Med denna FAQ vill vi täcka de viktigaste frågorna relaterade till användande
 
 
 ## Innehållsförteckning
-- [[ProtonDB] "Spela" och "Installera" verkar inte fungera i Firefox.](#protondb-spela-och-installera-verkar-inte-fungera-i-firefox)
-- [[ProtonDB] På sidan visas mitt spel som ett windowsspel men den har en native portning eller tvärtom.](#protondb-på-sidan-visas-mitt-spel-som-ett-windowsspel-men-den-har-en-native-portning-eller-tvärtom)
-- [Varför kraschar mina spel vid start, körs långsamt eller har renderingsproblem?](#varför-kraschar-mina-spel-vid-start-körs-långsamt-eller-har-renderingsproblem)
+- [Språk](#spr%c3%a5k)
+- [Introduktion](#introduktion)
+- [Innehållsförteckning](#inneh%c3%a5llsf%c3%b6rteckning)
+- [[ProtonDB] "Spela" och "Installera" verkar inte fungera i Firefox.](#protondb-%22spela%22-och-%22installera%22-verkar-inte-fungera-i-firefox)
+- [[ProtonDB] På sidan visas mitt spel som ett windowsspel men den har en native portning eller tvärtom.](#protondb-p%c3%a5-sidan-visas-mitt-spel-som-ett-windowsspel-men-den-har-en-native-portning-eller-tv%c3%a4rtom)
+- [Varför kraschar mina spel vid start, körs långsamt eller har renderingsproblem?](#varf%c3%b6r-kraschar-mina-spel-vid-start-k%c3%b6rs-l%c3%a5ngsamt-eller-har-renderingsproblem)
 - [Mitt spel kraschar efter ett tag men fungerar bra utan esync.](#mitt-spel-kraschar-efter-ett-tag-men-fungerar-bra-utan-esync)
 - [Spelet visar ingen text.](#spelet-visar-ingen-text)
-- [Vissa spel såsom Witcher 3 saknar texturer/fiender.](#vissa-spel-såsom-witcher-3-saknar-texturerfiender)
-- [Varför hackar vissa spel i början?](#varför-hackar-vissa-spel-i-början)
-- [Jag har ljudproblem såsom sprakande.](#jag-har-ljudproblem-såsom-sprakande)
+- [Vissa spel såsom Witcher 3 saknar texturer/fiender.](#vissa-spel-s%c3%a5som-witcher-3-saknar-texturerfiender)
+- [Varför hackar vissa spel i början?](#varf%c3%b6r-hackar-vissa-spel-i-b%c3%b6rjan)
+- [Jag har ljudproblem såsom sprakande.](#jag-har-ljudproblem-s%c3%a5som-sprakande)
 - [Jag vill spela ett spel utan DXVK.](#jag-vill-spela-ett-spel-utan-dxvk)
-- [Hur skapar jag en logg från ett spel jag kör med Proton?](#hur-skapar-jag-en-logg-från-ett-spel-jag-kör-med-proton)
-- [Några rapporter säger att de får spelet att fungera genom att installera någon mjukvara, hur gör jag det?](#några-rapporter-säger-att-de-får-spelet-att-fungera-genom-att-installera-någon-mjukvara-hur-gör-jag-det)
-- [Hur kör jag Windows-spel jag inte äger på Steam?](#hur-kör-jag-windows-spel-jag-inte-äger-på-steam)
+- [Hur skapar jag en logg från ett spel jag kör med Proton?](#hur-skapar-jag-en-logg-fr%c3%a5n-ett-spel-jag-k%c3%b6r-med-proton)
+- [Några rapporter säger att de får spelet att fungera genom att installera någon mjukvara, hur gör jag det?](#n%c3%a5gra-rapporter-s%c3%a4ger-att-de-f%c3%a5r-spelet-att-fungera-genom-att-installera-n%c3%a5gon-mjukvara-hur-g%c3%b6r-jag-det)
+    - [Använd Winetricks](#anv%c3%a4nd-winetricks)
+    - [Använd verktyg](#anv%c3%a4nd-verktyg)
+- [Hur kör jag Windows-spel jag inte äger på Steam?](#hur-k%c3%b6r-jag-windows-spel-jag-inte-%c3%a4ger-p%c3%a5-steam)
 - [Jag har problem med min kontroller!](#jag-har-problem-med-min-kontroller)
-- [Spel lagrade på min Windows-partition (NTFS) startar inte.](#spel-lagrade-på-min-windows-partition-ntfs-startar-inte)
-- [Punkbuster, Rockstar Social Club osv... misslyckas under förstagångsinstallationen utförs.](#punkbuster-rockstar-social-club-osv-misslyckas-under-förstagångsinstallationen-utförs)
-- [Mitt spel sparar ingenting eller kraschar när jag skapar/laddar en sparning.](#mitt-spel-sparar-ingenting-eller-kraschar-när-jag-skaparladdar-en-sparning)
-- [Hela min dator hänger sig någon gång under spelet.](#hela-min-dator-hänger-sig-någon-gång-under-spelet)
+- [Spel lagrade på min Windows-partition (NTFS) startar inte.](#spel-lagrade-p%c3%a5-min-windows-partition-ntfs-startar-inte)
+- [Punkbuster, Rockstar Social Club osv... misslyckas under förstagångsinstallationen utförs.](#punkbuster-rockstar-social-club-osv-misslyckas-under-f%c3%b6rstag%c3%a5ngsinstallationen-utf%c3%b6rs)
+- [Mitt spel sparar ingenting eller kraschar när jag skapar/laddar en sparning.](#mitt-spel-sparar-ingenting-eller-kraschar-n%c3%a4r-jag-skaparladdar-en-sparning)
+- [Hela min dator hänger sig någon gång under spelet.](#hela-min-dator-h%c3%a4nger-sig-n%c3%a5gon-g%c3%a5ng-under-spelet)
 
 
 ## [ProtonDB] "Spela" och "Installera" verkar inte fungera i Firefox.
@@ -132,7 +137,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 ```
 
 #### Använd verktyg
-De två mest populära just nu är [Protontricks](https://github.com/Sirmentio/protontricks) och [ProtonFixes](https://github.com/simons-public/protonfixes).
+De två mest populära just nu är [Protontricks](https://github.com/Matoking/protontricks) och [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Var vänlig läs instruktionerna om dessa verktyg på deras respektive sidor.
 

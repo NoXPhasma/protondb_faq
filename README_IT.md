@@ -103,7 +103,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 ##
 #### Utilizzo dei Tools
 
-Attualmente i due tools più popolari sono [Protontricks](https://github.com/Sirmentio/protontricks) e [ProtonFixes](https://github.com/simons-public/protonfixes).
+Attualmente i due tools più popolari sono [Protontricks](https://github.com/Matoking/protontricks) e [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Per favore leggi la documentazione relativa a questi due tools sui loro rispettivi siti.
 

@@ -120,7 +120,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 
 #### En utilisant des outils additionnels
 
-Les deux outils les plus utilisés à l'heure actuelle sont [Protontricks](https://github.com/Sirmentio/protontricks) et [ProtonFixes](https://github.com/simons-public/protonfixes).
+Les deux outils les plus utilisés à l'heure actuelle sont [Protontricks](https://github.com/Matoking/protontricks) et [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Vous pouvez trouver les instructions d'utilisation de ces outils sur leurs sites respectifs.
 

@@ -141,7 +141,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 ##
 #### Ved bruk av verktøy
 
-The two most popular currently are [Protontricks](https://github.com/Sirmentio/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
+The two most popular currently are [Protontricks](https://github.com/Matoking/protontricks) and [ProtonFixes](https://github.com/simons-public/protonfixes).
 
 Vær vennlig og les instruksene til verktøyene på deres nettsider.
 
