@@ -136,7 +136,7 @@ WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 Her er et eksempel:
 
 ```
-WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
 #### Ved bruk av verktøy

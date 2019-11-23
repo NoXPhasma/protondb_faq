@@ -133,7 +133,7 @@ WINEPREFIX=(Steam-mapp)/steamapps/compatdata/(SPEL-ID)/pfx/ winetricks
 
 Här är ett exempel
 ```
-WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 
 #### Använd verktyg
@@ -155,7 +155,7 @@ Men, vi rekommdenrar [Lutris](https://lutris.net) för att köra de flesta icke-
 ## Jag har problem med min kontroller!
 Fall #1: Min kontroller upptäcks som spelare 1 & spelare 2 i legospel.
 
-- Lösning #1: Öppna kontrollerinställningarna från gameprefixet med kommandot exempelvis: `WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` och avaktivera kontrollerns "js" & "event" och starta sedan om sessionen för att kontrollera att wine är helt stängt för att vara säker på att de nya ändringarna laddas.
+- Lösning #1: Öppna kontrollerinställningarna från gameprefixet med kommandot exempelvis: `WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` och avaktivera kontrollerns "js" & "event" och starta sedan om sessionen för att kontrollera att wine är helt stängt för att vara säker på att de nya ändringarna laddas.
 
 Fall #2: Min Steam Controller upptäcks inte ens med native spel, bara musfunktionen.
 
@@ -175,7 +175,7 @@ Det kan hända att sådana saker inte är installerade korrekt den [första gån
 
 Varje spel har en mapp i spelets mapp vilket exempelvis är kallade som så: "Installers", "Redist" och så vidare... Dessa mappar innehåller installationsprogrammen för PB eller RGSC, dessa måste startar i den motsvaramde spelprefixen med wine, här är ett exempel:
 
-`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+`WINEPREFIX='~/.steam/steam/steamapps/compatdata/271590/pfx' wine '~/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
 
 ## Mitt spel sparar ingenting eller kraschar när jag skapar/laddar en sparning.

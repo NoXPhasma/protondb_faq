@@ -113,7 +113,7 @@ WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 Вот пример
 
 ```
-WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
 #### Использование инстурментов
@@ -130,7 +130,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 
 Случай №1: Мой контроллер распознается как игрок 1 и игрок 2 в играх Lego.
 
-- Fix #1: Откройте настройки контроллера от gameprefix с командной например:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000pfx/ wine control  и  отключите контроллер "js" & "event" после этого перезапустите сессию, чтобы подтвердить, что Wine полностью закрыт, дабы гарантировать, что новые изменения загрузятся.
+- Fix #1: Откройте настройки контроллера от gameprefix с командной например:`WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000pfx/ wine control  и  отключите контроллер "js" & "event" после этого перезапустите сессию, чтобы подтвердить, что Wine полностью закрыт, дабы гарантировать, что новые изменения загрузятся.
 
 ## Игры, сохраненные в разделе Windows (NTFS), не запускаются
 
@@ -142,7 +142,7 @@ WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetrick
 
 Каждая игра имеет в папке с игрой одну папку, она называется например: "Installers" "Redist" и так далее... Затем она содержит программу установки для PB или RGSC, они должны быть просто запущены в соответствующем gameprefix с Wine, вот пример:
 
-`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+`WINEPREFIX='~/.steam/steam/steamapps/compatdata/271590/pfx' wine '~/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
 ## Моя игра ничего не сохраняет или падает при создании/загрузке сохранения.
 

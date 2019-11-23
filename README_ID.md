@@ -123,7 +123,7 @@ WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 Ini contohnya
 
 ```
-WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
 #### Penggunaan Tool
@@ -146,7 +146,7 @@ Akan tetapi, kami menyarankan [Lutris](https://lutris.net/) untuk menjalankan no
 
 Kasus #1: Controller saya bisa dikenali sebagai player 1 & player 2 dalam game LEGO.
 
-- Penyelesaian  #1: Buka controller settings dalam gameprefix dengan perintah misalnya:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` dan matikan controller "js" & "event" setelah itu restart sesi Anda untuk memastikan bahwa Wine sudah tertutup sepenuhnya dan pergantian konfigurasi baru yang akan dimuat.
+- Penyelesaian  #1: Buka controller settings dalam gameprefix dengan perintah misalnya:`WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` dan matikan controller "js" & "event" setelah itu restart sesi Anda untuk memastikan bahwa Wine sudah tertutup sepenuhnya dan pergantian konfigurasi baru yang akan dimuat.
 
 Kasus #2: Steam-Controller tidak dikenali bahkan oleh native game, hanya mouse yang berfungsi.
 
@@ -166,7 +166,7 @@ Bisa jadi mereka tidak terpasang dengan benar [awalnya](https://github.com/NoXPh
 
 Setiap game memiliki folder di dalam game folder yang misalnya disebut: "Installers" "Redist" dan semacamnya...... Folder ini berisi installer untuk PB atau RGSC, ini harus dijalankan pada gameprefix terkait dengan wine, contohnya: 
 
-`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+`WINEPREFIX='~/.steam/steam/steamapps/compatdata/271590/pfx' wine '~/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
 ## Game saya tidak mau menyimpan apapun atau crash saat membuat/memuat simpanan.
 

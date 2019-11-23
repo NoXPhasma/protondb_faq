@@ -122,7 +122,7 @@ WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 Here is an example
 
 ```
-WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 ##
 #### Rīku lietošana
@@ -145,7 +145,7 @@ However, we do recommend [Lutris](https://lutris.net/) to run most non Steam gam
 
 Case #1: My controller gets recognized as player 1 & player 2 in lego games.
 
-- Fix  #1: Open the controller settings from the gameprefix with the command for example:`WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` and deactivate the controller "js" & "event" after that restart your session to confirm that wine is completely closed to ensure that the new changes to be loaded.
+- Fix  #1: Open the controller settings from the gameprefix with the command for example:`WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` and deactivate the controller "js" & "event" after that restart your session to confirm that wine is completely closed to ensure that the new changes to be loaded.
 
 Case #2: My Steam-Controller is not recognized even with native games, only the mouse functions.
 
@@ -165,7 +165,7 @@ It can happen that such things are not installed correctly the [first time](http
 
 Each game has a folder in the game folder which for example are called so: "Installers" "Redist" and so on...... These folders contain the installation program for PB or RGSC, these must be started in the corresponding game prefix with wine, here an example: 
 
-`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+`WINEPREFIX='~/.steam/steam/steamapps/compatdata/271590/pfx' wine '~/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
 ## Mana spēle neko nesaglabā vai ir kļūda spēles saglabāšanas laikā.
 
