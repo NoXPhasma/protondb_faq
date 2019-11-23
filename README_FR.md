@@ -115,7 +115,7 @@ WINEPREFIX=(Steam-folder)/steamapps/compatdata/(GAME-ID)/pfx/ winetricks
 Exemple :
 
 ```
-WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ winetricks
 ```
 
 #### En utilisant des outils additionnels
@@ -140,7 +140,7 @@ Si il y a le moinde espace dans le chemin menant à l'exécutable du jeu, vous d
 
 Cas #1: Mon controlleur est reconnu en tant que "Joueur 1" et "Joueur 2" dans les jeux Lego.
 
-Solution: Ouvrez la fenêtre des paramètres de contrôleur en étant dans le préfixe de votre jeu. Par exemple, `WINEPREFIX=/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control`. Dans cette fenêtre, désactivez le contrôleur "js" & "event", puis redémarrez votre session afin d'être sûr que le changement a été pris en compte.
+Solution: Ouvrez la fenêtre des paramètres de contrôleur en étant dans le préfixe de votre jeu. Par exemple, `WINEPREFIX=~/.steam/steam/steamapps/compatdata/4000/pfx/ wine control`. Dans cette fenêtre, désactivez le contrôleur "js" & "event", puis redémarrez votre session afin d'être sûr que le changement a été pris en compte.
 
 Cas #2: Mon Steam-Controller n'est pas reconnu, même dans les jeux natifs. Seul le contrôle de la souris fonctionne.
 
@@ -160,7 +160,7 @@ Solution : lancer l'installation manuellement depuis le dossier principal du jeu
 
 Par exemple :
 
-`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+`WINEPREFIX='~/.steam/steam/steamapps/compatdata/271590/pfx' wine '~/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
 ## Les sauvegardes de mon jeu ne fonctionne pas, ou bien le jeu plante lorsque je crée ou charge une sauvegarde.
 

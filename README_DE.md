@@ -111,7 +111,7 @@ WINEPREFIX = (Steam-Ordner)/Steamapps/compatdata/(GAME-ID)/pfx/winetricks
 Hier ein Beispiel wie der Befehl am Ende auszusehen hat.
 
 ```
-WINEPREFIX=/home/alexander/.steam/steamapps/compatdata/4000/pfx/winetricks
+WINEPREFIX=~/.steam/steamapps/compatdata/4000/pfx/winetricks
 ```
 ##
 #### Einsatz von speziellen Tools
@@ -127,7 +127,7 @@ Um Spiele auszuführen, die nicht auf Steam sind, können Sie [Lutris](https:/lu
 ## Ich habe Probleme mit meinen Controller!
 
 Fall #1: Mein Controller wird bei Lego Spielen als Spieler 1 & Spieler 2 erkannt.
-- Lösung #1: Öffnen sie die controller einstellungen von wine im gameprefix mit den Befehl `wine control` am ende. Hier ist ein Beispiel  : `WINEPREFIX =/home/alexander/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` und deaktivieren Sie die Controller "js" & "event ". Dannach starten Sie Ihre Sitzung neu, um sicherzustellen, dass alle Wine prozesse vollständig geschlossen sind und dass die neuen Änderungen geladen werden.
+- Lösung #1: Öffnen sie die controller einstellungen von wine im gameprefix mit den Befehl `wine control` am ende. Hier ist ein Beispiel  : `WINEPREFIX =~/.steam/steam/steamapps/compatdata/4000/pfx/ wine control` und deaktivieren Sie die Controller "js" & "event ". Dannach starten Sie Ihre Sitzung neu, um sicherzustellen, dass alle Wine prozesse vollständig geschlossen sind und dass die neuen Änderungen geladen werden.
 
 Fall #2: Der Steam-Controller funktioniert auf dem Desktop, wird aber im Spiel nicht erkannt.
 - Lösung #2: Dies ist [Alexander](https://github.com/Alexander88207) bisher nur von gentoo selbst und darauf basierenden Distributionen bemerkt worden.
@@ -144,7 +144,7 @@ Es kann vorkommen, dass solche Dinge beim ersten Mal nicht richtig installiert w
 
 Jedes Spiel hat im Spielordner einen Ordner, die z.b. : "Installer", "Redist" und so weiter..... heißen. Diese enthalten dann das Installationsprogramm für PB,RGSC usw...Und diese müssen dann einfach im jeweiligen Spielpräfix mit wine gestartet werden, hier ein Beispiel:
 
-`WINEPREFIX='/home/alexander/.steam/steam/steamapps/compatdata/271590/pfx' wine '/home/alexander/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
+`WINEPREFIX='~/.steam/steam/steamapps/compatdata/271590/pfx' wine '~/.steam/steam/steamapps/common/Grand Theft Auto V/Installers/Social-Club-Setup.exe'`
 
 ## Mein Spiel speichert nichts oder stürzt beim laden eines Spielstandes ab.
 
