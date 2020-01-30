@@ -22,6 +22,7 @@ With this FAQ, we want to cover the most important questions related to the usag
   - [[ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
   - [[ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
 ](#protondb-at-the-site-my-game-is-displayed-as-a-windows-game-but-it-have-a-native-port-or-the-other-way-round)
+  - [Common launch parameters for Proton](#common-launch-parameters-for-proton)
   - [Why do my games crash on start, run very slow or have rendering issues?](#why-do-my-games-crash-on-start-run-very-slow-or-have-rendering-issues)
   - [My game crashes after a while but works fine without esync](#my-game-crashes-after-a-while-but-works-fine-without-esync)
   - [The game doesn't show any text](#the-game-doesnt-show-any-text)
@@ -44,6 +45,10 @@ If Firefox doesn't ask you how it should proceed with `steam://` URLS, you need 
 ## [ProtonDB] On Steam my game is displayed as a windows game, but it has had a native port before!
 
 ProtonDB obtains the data from SteamDB, and these in turn are set by the developers of the respective game you want to play. So if the developers had a native port like, for example; Rust, and it was closed, then the game will be shown as a Windows game, but buyers who purchased the native port will keep said port as an option in their Steam library, so there will be some users who write: "it has a native port!", when that sometimes is no longer the case.
+
+## Common launch parameters for Proton
+
+There are several useful launch parameters for Proton, you can find them in the [official Proton repository](https://github.com/ValveSoftware/Proton/#runtime-config-options)
 
 ## Why do my games crash on startup, run very slowly or have rendering issues?
 
