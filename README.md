@@ -18,7 +18,7 @@ To see who else was helping, see our [contributors](https://github.com/NoXPhasma
 With this FAQ, we want to cover the most important questions related to the usage of ProtonDB and of course technical questions which occur very often on the Discord. If you want to participate or have suggestions, don't hesitate to contact us on [Discord](https://discord.gg/uuwK9EV) or send us issues and pull requests.
 
 
-## Table of content
+## Table of contents
   - [[ProtonDB] The "Run" and "Install" buttons doesn't seem to work on Firefox.](#protondb-the-run-and-install-buttons-dont-seem-to-work-on-firefox)
   - [[ProtonDB] At the site my game is displayed as a windows game but it have a native port or the other way round.
 ](#protondb-at-the-site-my-game-is-displayed-as-a-windows-game-but-it-have-a-native-port-or-the-other-way-round)
