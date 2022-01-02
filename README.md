@@ -78,7 +78,7 @@ This has been fixed since DXVK Version [0.90](https://github.com/doitsujin/dxvk/
 
 ## Why do some games stutter at the beginning?
 
-This is quite normal. Because at the beginning the shaders have to be loaded first. So that it doesn't stutter next time, The are written directly into a so-called shader cache.
+This is quite normal. Because at the beginning the shaders have to be loaded first. So that it doesn't stutter next time, they are written directly into a so-called shader cache.
 
 Note that the dxvk cache is not related to the "Shader Pre-Caching" by Steam.
 
